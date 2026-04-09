@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Tamara — Luxury Ownership Passports",
+  title: "Evrlink — Luxury Ownership Infrastructure",
   description:
-    "Tamara creates digital ownership passports for luxury goods, protecting authenticity through invisible microchips linked to digital certificates.",
+    "Evrlink is the infrastructure that connects luxury brands to the lifetime value of their products. Digital ownership passports powered by invisible microchips.",
 };
 
 export default function RootLayout({
@@ -13,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={cormorant.variable}>
       <body style={{ minHeight: "100%", display: "flex", flexDirection: "column" }}>
         {children}
       </body>
