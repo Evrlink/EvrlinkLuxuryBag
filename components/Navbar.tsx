@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 const G = {
   gold: "#C9A84C",
-  goldBorder: "rgba(201,168,76,0.28)",
   goldDim: "rgba(201,168,76,0.55)",
   cream: "#F5F0E8",
   creamDim: "rgba(245,240,232,0.5)",
@@ -39,14 +38,14 @@ export default function Navbar() {
 
       {/* Logo */}
       <a href="#" style={{ display: "flex", alignItems: "center", gap: "10px", textDecoration: "none" }}>
-        <span style={{
+        {/* <span style={{
           width: "7px",
           height: "7px",
           borderRadius: "50%",
           background: G.gold,
           display: "inline-block",
           boxShadow: `0 0 8px rgba(201,168,76,0.5)`,
-        }} />
+        }} /> */}
         <span style={{
           fontSize: "11.5px",
           fontWeight: 500,
@@ -75,37 +74,7 @@ export default function Navbar() {
           About
         </a>
 
-        <a
-          href="#contact"
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "8px",
-            padding: "8px 22px",
-            borderRadius: "999px",
-            border: `1px solid ${G.goldBorder}`,
-            fontSize: "12px",
-            fontWeight: 500,
-            color: G.gold,
-            textDecoration: "none",
-            letterSpacing: "0.08em",
-            transition: "background 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s",
-          }}
-          onMouseEnter={e => {
-            const el = e.currentTarget as HTMLAnchorElement;
-            el.style.background = G.gold;
-            el.style.color = G.bg;
-            el.style.borderColor = G.gold;
-            el.style.boxShadow = "0 0 20px rgba(201,168,76,0.3)";
-          }}
-          onMouseLeave={e => {
-            const el = e.currentTarget as HTMLAnchorElement;
-            el.style.background = "transparent";
-            el.style.color = G.gold;
-            el.style.borderColor = G.goldBorder;
-            el.style.boxShadow = "none";
-          }}
-        >
+        <a href="#contact" className="rim-btn rim-btn--nav">
           Get Early Access
         </a>
       </div>

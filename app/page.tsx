@@ -14,7 +14,7 @@ export default function Home() {
       <HeroBannerClient />
       <TheProblem />
       <TheSolution />
-      <WhyNow />
+      {/* <WhyNow /> */}
       <ClosingSection />
     </>
   );

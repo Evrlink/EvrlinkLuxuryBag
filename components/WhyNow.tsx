@@ -156,7 +156,7 @@ export default function WhyNow() {
         transform: "translateY(-50%)",
         fontSize: "clamp(16rem, 30vw, 28rem)",
         fontWeight: 700,
-        fontFamily: "var(--font-cormorant), Georgia, serif",
+        fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
         color: "rgba(201,168,76,0.026)",
         letterSpacing: "-0.05em",
         lineHeight: 1,
@@ -192,7 +192,7 @@ export default function WhyNow() {
         {/* Opening — two headline lines */}
         <h2 style={{
           ...fade(0.1),
-          fontFamily: "var(--font-cormorant), Georgia, serif",
+          fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
           fontSize: "clamp(2.4rem, 4.5vw, 4.2rem)",
           fontWeight: 300,
           lineHeight: 1.06,
@@ -204,7 +204,7 @@ export default function WhyNow() {
         </h2>
         <h2 style={{
           ...fade(0.2),
-          fontFamily: "var(--font-cormorant), Georgia, serif",
+          fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
           fontSize: "clamp(1.8rem, 3.8vw, 3.4rem)",
           fontWeight: 400,
           fontStyle: "italic",
@@ -234,7 +234,7 @@ export default function WhyNow() {
             {/* Two-column row */}
             <div className="wn-force-row">
               <h3 style={{
-                fontFamily: "var(--font-cormorant), Georgia, serif",
+                fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
                 fontSize: "clamp(1.4rem, 2.2vw, 2rem)",
                 fontWeight: 300,
                 lineHeight: 1.15,
@@ -286,7 +286,7 @@ export default function WhyNow() {
               flexShrink: 0,
             }} />
             <span style={{
-              fontFamily: "var(--font-cormorant), Georgia, serif",
+              fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
               fontSize: "clamp(1.4rem, 2.2vw, 2rem)",
               fontWeight: 400,
               fontStyle: "italic",
@@ -305,7 +305,7 @@ export default function WhyNow() {
 
           {/* Line 2 — gold */}
           <span style={{
-            fontFamily: "var(--font-cormorant), Georgia, serif",
+            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
             fontSize: "clamp(1.4rem, 2.2vw, 2rem)",
               fontWeight: 400,
               fontStyle: "italic",

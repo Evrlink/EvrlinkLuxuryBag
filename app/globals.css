@@ -15,10 +15,172 @@ html {
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-weight: 300;
+  font-family: var(--font-didot), "Didot", "Linotype Didot", Georgia, serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (pointer: coarse) {
+  .cursor-dot {
+    display: none !important;
+  }
+}
+
+/* CTAs — modern luxury: editorial shape, metallic gold, glass outline */
+.rim-btn {
+  --rim-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 16px 40px;
+  min-height: 48px;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  transition:
+    background 0.45s var(--rim-ease),
+    color 0.45s var(--rim-ease),
+    border-color 0.45s var(--rim-ease),
+    box-shadow 0.45s var(--rim-ease),
+    transform 0.45s var(--rim-ease),
+    opacity 0.25s ease;
+}
+
+.rim-btn:focus-visible {
+  outline: 1px solid rgba(232, 201, 106, 0.65);
+  outline-offset: 3px;
+}
+
+.rim-btn:disabled {
+  cursor: wait;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+/* Primary: brushed gold depth + hairline rim */
+.rim-btn--primary {
+  background: linear-gradient(
+    168deg,
+    #e0c56a 0%,
+    #c9a84c 38%,
+    #b8943e 72%,
+    #a68232 100%
+  );
+  color: #0d0d0e;
+  border: 1px solid rgba(255, 248, 230, 0.35);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.12),
+    0 1px 0 rgba(0, 0, 0, 0.2),
+    0 12px 40px -12px rgba(201, 168, 76, 0.35);
+}
+
+.rim-btn--primary:hover:not(:disabled) {
+  background: linear-gradient(
+    168deg,
+    #edd078 0%,
+    #d4b55a 40%,
+    #c9a84c 75%,
+    #b8943e 100%
+  );
+  border-color: rgba(255, 252, 245, 0.55);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+    0 2px 0 rgba(0, 0, 0, 0.15),
+    0 20px 48px -10px rgba(201, 168, 76, 0.45);
+  transform: translateY(-1px);
+}
+
+.rim-btn--primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.12),
+    0 8px 28px -12px rgba(201, 168, 76, 0.3);
+}
+
+/* Secondary: smoked glass + fine gold wire */
+.rim-btn--secondary {
+  background: rgba(255, 255, 255, 0.035);
+  color: #d4bc6a;
+  border: 1px solid rgba(201, 168, 76, 0.38);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 8px 32px -8px rgba(0, 0, 0, 0.35);
+}
+
+.rim-btn--secondary:hover {
+  background: rgba(201, 168, 76, 0.08);
+  color: #e8c96a;
+  border-color: rgba(232, 201, 106, 0.55);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 0 0 1px rgba(201, 168, 76, 0.12),
+    0 16px 40px -10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1px);
+}
+
+.rim-btn--secondary:active {
+  transform: translateY(0);
+}
+
+/* Nav: whisper-thin outline, fills with same primary gold on hover */
+.rim-btn--nav {
+  padding: 10px 24px;
+  min-height: 40px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: transparent;
+  color: #c9a84c;
+  border: 1px solid rgba(201, 168, 76, 0.42);
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+.rim-btn--nav:hover {
+  background: linear-gradient(
+    168deg,
+    #e0c56a 0%,
+    #c9a84c 45%,
+    #b8943e 100%
+  );
+  color: #0d0d0e;
+  border-color: rgba(255, 248, 230, 0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 10px 36px -8px rgba(201, 168, 76, 0.35);
+  transform: translateY(-1px);
+}
+
+.rim-btn--nav:active {
+  transform: translateY(0);
+}
+
+.rim-btn--compact {
+  padding: 14px 26px;
+  min-height: 44px;
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+}
+
+.rim-btn--closing {
+  padding: 16px 32px;
+  font-size: 11px;
+  width: 100%;
 }
 
 a {

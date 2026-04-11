@@ -36,6 +36,7 @@ function ProblemDiagram() {
           style={{ width: "100%", height: "auto" }}
         >
           <defs>
+            <style type="text/css">{`text{font-family:var(--font-didot),Georgia,serif}`}</style>
             <radialGradient id="pg-brand-aura" cx="50%" cy="50%" r="50%">
               <stop offset="0%" stopColor="rgba(201,168,76,0.18)" />
               <stop offset="100%" stopColor="rgba(201,168,76,0)" />
@@ -47,7 +48,7 @@ function ProblemDiagram() {
           <circle cx="115" cy="72" r="40" stroke="rgba(201,168,76,0.22)" strokeWidth="0.8" />
           <circle cx="115" cy="72" r="30" stroke="rgba(201,168,76,0.48)" strokeWidth="0.7" fill="rgba(201,168,76,0.06)" />
           <circle cx="115" cy="72" r="4.5" fill="#C9A84C" />
-          <text x="115" y="125" textAnchor="middle" fontSize="7.5" fill="rgba(201,168,76,0.65)" letterSpacing="4" fontFamily="Inter,sans-serif" fontWeight="500">
+          <text x="115" y="125" textAnchor="middle" fontSize="7.5" fill="rgba(201,168,76,0.65)" letterSpacing="4"  fontWeight="500">
             BRAND
           </text>
 
@@ -55,7 +56,7 @@ function ProblemDiagram() {
           <line x1="115" y1="133" x2="115" y2="198" stroke="rgba(201,168,76,0.38)" strokeWidth="0.9" />
           <polyline points="110,191 115,200 120,191" stroke="rgba(201,168,76,0.38)" strokeWidth="0.8" fill="none" />
           <line x1="116" y1="164" x2="128" y2="164" stroke="rgba(201,168,76,0.15)" strokeWidth="0.5" />
-          <text x="131" y="167.5" fontSize="6.5" fill="rgba(245,240,232,0.25)" letterSpacing="2" fontFamily="Inter,sans-serif">
+          <text x="131" y="167.5" fontSize="6.5" fill="rgba(245,240,232,0.25)" letterSpacing="2" >
             FIRST SALE
           </text>
 
@@ -63,7 +64,7 @@ function ProblemDiagram() {
           <circle cx="115" cy="236" r="30" stroke="rgba(245,240,232,0.30)" strokeWidth="0.8" fill="rgba(245,240,232,0.025)" />
           <rect x="103" y="229" width="24" height="17" rx="2" stroke="rgba(245,240,232,0.45)" strokeWidth="0.9" fill="rgba(245,240,232,0.04)" />
           <path d="M107 229 C107 222 123 222 123 229" stroke="rgba(245,240,232,0.45)" strokeWidth="0.9" />
-          <text x="115" y="280" textAnchor="middle" fontSize="7.5" fill="rgba(245,240,232,0.32)" letterSpacing="3.5" fontFamily="Inter,sans-serif" fontWeight="400">
+          <text x="115" y="280" textAnchor="middle" fontSize="7.5" fill="rgba(245,240,232,0.32)" letterSpacing="3.5"  fontWeight="400">
             PRODUCT
           </text>
 
@@ -75,7 +76,7 @@ function ProblemDiagram() {
           <line x1="108" y1="308" x2="122" y2="322" stroke="rgba(201,168,76,0.42)" strokeWidth="0.9" />
           <line x1="122" y1="308" x2="108" y2="322" stroke="rgba(201,168,76,0.42)" strokeWidth="0.9" />
           <rect x="72" y="330" width="86" height="17" rx="8.5" fill="rgba(201,168,76,0.045)" stroke="rgba(201,168,76,0.22)" strokeWidth="0.5" />
-          <text x="115" y="342.5" textAnchor="middle" fontSize="6.5" fill="rgba(201,168,76,0.48)" letterSpacing="2.5" fontFamily="Inter,sans-serif" fontWeight="500">
+          <text x="115" y="342.5" textAnchor="middle" fontSize="6.5" fill="rgba(201,168,76,0.48)" letterSpacing="2.5"  fontWeight="500">
             SIGNAL LOST
           </text>
 
@@ -84,21 +85,21 @@ function ProblemDiagram() {
 
           {/* ── SECONDARY MARKET (ghost) ─────── */}
           <circle cx="115" cy="438" r="30" stroke="rgba(245,240,232,0.06)" strokeWidth="0.7" strokeDasharray="2.5 4" />
-          <text x="115" y="434" textAnchor="middle" fontSize="6.5" fill="rgba(245,240,232,0.12)" letterSpacing="1.5" fontFamily="Inter,sans-serif">
+          <text x="115" y="434" textAnchor="middle" fontSize="6.5" fill="rgba(245,240,232,0.12)" letterSpacing="1.5" >
             SECONDARY
           </text>
-          <text x="115" y="446" textAnchor="middle" fontSize="6.5" fill="rgba(245,240,232,0.12)" letterSpacing="1.5" fontFamily="Inter,sans-serif">
+          <text x="115" y="446" textAnchor="middle" fontSize="6.5" fill="rgba(245,240,232,0.12)" letterSpacing="1.5" >
             MARKET
           </text>
 
           {/* ── VALUE ANNOTATION ────────────── */}
-          <text x="185" y="286" fontSize="6" fill="rgba(201,168,76,0.26)" letterSpacing="1" fontFamily="Inter,sans-serif" textAnchor="middle">
+          <text x="185" y="286" fontSize="6" fill="rgba(201,168,76,0.26)" letterSpacing="1"  textAnchor="middle">
             VALUE
           </text>
           <text x="185" y="298" fontSize="8" fill="rgba(201,168,76,0.22)" textAnchor="middle">
             ↑
           </text>
-          <text x="185" y="310" fontSize="6" fill="rgba(201,168,76,0.26)" letterSpacing="1" fontFamily="Inter,sans-serif" textAnchor="middle">
+          <text x="185" y="310" fontSize="6" fill="rgba(201,168,76,0.26)" letterSpacing="1"  textAnchor="middle">
             GROWS
           </text>
         </svg>
@@ -159,7 +160,7 @@ export default function TheProblem() {
           transform: "translateY(-50%)",
           fontSize: "clamp(16rem, 30vw, 28rem)",
           fontWeight: 700,
-          fontFamily: "var(--font-cormorant), Georgia, serif",
+          fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
           color: "rgba(201,168,76,0.026)",
           letterSpacing: "-0.05em",
           lineHeight: 1,
@@ -167,7 +168,7 @@ export default function TheProblem() {
           pointerEvents: "none",
         }}
       >
-        02
+        {/* 02 */}
       </div>
 
       {/* Main grid */}
@@ -176,7 +177,7 @@ export default function TheProblem() {
         <div id="tp-text">
           {/* Section label */}
           <div style={{ ...fade(0), display: "flex", alignItems: "center", gap: "12px", marginBottom: "44px" }}>
-            <div style={{ width: "28px", height: "1px", background: G.gold, opacity: 0.5 }} />
+            {/* <div style={{ width: "28px", height: "1px", background: G.gold, opacity: 0.5 }} /> */}
             <span style={{
               fontSize: "9.5px",
               fontWeight: 500,
@@ -184,14 +185,14 @@ export default function TheProblem() {
               textTransform: "uppercase",
               color: G.goldDim,
             }}>
-              02 — The Problem
+              The Problem
             </span>
           </div>
 
           {/* Headline 1 — cream */}
           <h2 style={{
             ...fade(0.1),
-            fontFamily: "var(--font-cormorant), Georgia, serif",
+            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
             fontSize: "clamp(3rem, 5.5vw, 5rem)",
             fontWeight: 300,
             lineHeight: 1.08,
@@ -199,13 +200,13 @@ export default function TheProblem() {
             margin: "0 0 6px",
             color: G.cream,
           }}>
-            Luxury created<br />the value.
+            Luxury created<br />the value
           </h2>
 
           {/* Headline 2 — gold italic */}
           <h2 style={{
             ...fade(0.2),
-            fontFamily: "var(--font-cormorant), Georgia, serif",
+            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
             fontSize: "clamp(3rem, 5.5vw, 5rem)",
             fontWeight: 400,
             fontStyle: "italic",
@@ -214,17 +215,17 @@ export default function TheProblem() {
             margin: "0 0 48px",
             color: G.gold,
           }}>
-            Platforms captured<br />the economics.
+            Platforms captured<br />the economics
           </h2>
 
           {/* Gold divider */}
-          <div style={{
+          {/* <div style={{
             ...fade(0.28),
             width: "44px",
             height: "1px",
             background: `linear-gradient(to right, ${G.gold}, transparent)`,
             marginBottom: "32px",
-          }} />
+          }} /> */}
 
           {/* Body copy */}
           <p style={{
@@ -237,7 +238,7 @@ export default function TheProblem() {
             margin: "0 0 28px",
           }}>
             Brands invest billions in design, craft, and storytelling to build desirability.
-            That desirability doesn&apos;t expire at the point of sale — it compounds.
+            That desirability doesn&apos;t expire at the point of sale; it compounds.
           </p>
 
           {/* Left-border statement */}
@@ -249,8 +250,8 @@ export default function TheProblem() {
             color: G.creamDim,
             maxWidth: "480px",
             margin: "0 0 40px",
-            borderLeft: `1.5px solid ${G.goldBorder}`,
-            paddingLeft: "20px",
+            // borderLeft: `1.5px solid ${G.goldBorder}`,
+            // paddingLeft: "20px",
           }}>
             After the first sale, the connection between a brand and its product disappears.
           </p>
@@ -258,7 +259,7 @@ export default function TheProblem() {
           {/* Closing gold statement */}
           <p style={{
             ...fade(0.52),
-            fontFamily: "var(--font-cormorant), Georgia, serif",
+            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
             fontSize: "clamp(1.35rem, 2.2vw, 1.75rem)",
             fontWeight: 400,
             lineHeight: 1.42,

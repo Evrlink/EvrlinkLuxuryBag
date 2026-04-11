@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import ContactFormModal, { type ContactIntent } from "@/components/ContactFormModal";
 
 const G = {
   gold: "#C9A84C",
-  goldBright: "#E8C96A",
   goldDim: "rgba(201,168,76,0.55)",
   goldBorder: "rgba(201,168,76,0.28)",
   goldBg: "rgba(201,168,76,0.08)",
@@ -20,6 +20,13 @@ const NOISE_URI =
 export default function ClosingSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const [visible, setVisible] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
+  const [contactIntent, setContactIntent] = useState<ContactIntent>("early-access");
+
+  const openContact = (intent: ContactIntent) => {
+    setContactIntent(intent);
+    setContactOpen(true);
+  };
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -41,6 +48,12 @@ export default function ClosingSection() {
   });
 
   return (
+    <>
+    <ContactFormModal
+      open={contactOpen}
+      intent={contactIntent}
+      onClose={() => setContactOpen(false)}
+    />
     <section
       ref={sectionRef}
       id="contact"
@@ -91,20 +104,20 @@ export default function ClosingSection() {
 
           {/* Section label */}
           <div style={{ ...fade(0), display: "flex", alignItems: "center", gap: "12px", marginBottom: "52px" }}>
-            <div style={{ width: "28px", height: "1px", background: G.gold, opacity: 0.5 }} />
+            {/* <div style={{ width: "28px", height: "1px", background: G.gold, opacity: 0.5 }} /> */}
             <span style={{
               fontSize: "9.5px", fontWeight: 500,
               letterSpacing: "0.22em", textTransform: "uppercase",
               color: G.goldDim,
             }}>
-              05 — Vision
+              Vision
             </span>
           </div>
 
           {/* Large left-aligned headline — three short lines */}
           <h2 style={{
             ...fade(0.1),
-            fontFamily: "var(--font-cormorant), Georgia, serif",
+            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
             fontSize: "clamp(3.4rem, 6.5vw, 6rem)",
             fontWeight: 300,
             lineHeight: 1.04,
@@ -116,7 +129,7 @@ export default function ClosingSection() {
           </h2>
           <h2 style={{
             ...fade(0.18),
-            fontFamily: "var(--font-cormorant), Georgia, serif",
+            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
             fontSize: "clamp(3.4rem, 6.5vw, 6rem)",
             fontWeight: 300,
             lineHeight: 1.04,
@@ -128,7 +141,7 @@ export default function ClosingSection() {
           </h2>
           <h2 style={{
             ...fade(0.26),
-            fontFamily: "var(--font-cormorant), Georgia, serif",
+            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
             fontSize: "clamp(3.4rem, 6.5vw, 6rem)",
             fontWeight: 400,
             fontStyle: "italic",
@@ -141,12 +154,12 @@ export default function ClosingSection() {
           </h2>
 
           {/* Gold divider */}
-          <div style={{
+          {/* <div style={{
             ...fade(0.32),
             width: "44px", height: "1px",
             background: `linear-gradient(to right, ${G.gold}, transparent)`,
             marginBottom: "28px",
-          }} />
+          }} /> */}
 
           {/* Three-word descriptor */}
           <div style={{
@@ -238,39 +251,18 @@ export default function ClosingSection() {
             {/* CTA stack */}
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               {/* Primary — filled gold */}
-              <a
-                href="mailto:hello@evrlink.xyz"
-                style={{
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  padding: "15px 32px", borderRadius: "999px",
-                  border: `1px solid ${G.gold}`, background: G.gold,
-                  fontSize: "12px", fontWeight: 500, color: G.bg,
-                  letterSpacing: "0.12em", textTransform: "uppercase",
-                  textDecoration: "none",
-                  transition: "background 0.3s, border-color 0.3s, box-shadow 0.3s",
-                  cursor: "pointer",
-                }}
-                onMouseEnter={e => {
-                  const el = e.currentTarget as HTMLAnchorElement;
-                  el.style.background = G.goldBright;
-                  el.style.borderColor = G.goldBright;
-                  el.style.boxShadow = "0 0 36px rgba(201,168,76,0.4)";
-                }}
-                onMouseLeave={e => {
-                  const el = e.currentTarget as HTMLAnchorElement;
-                  el.style.background = G.gold;
-                  el.style.borderColor = G.gold;
-                  el.style.boxShadow = "none";
-                }}
+              <button
+                type="button"
+                onClick={() => openContact("early-access")}
+                className="rim-btn rim-btn--primary rim-btn--closing"
               >
                 Get Early Access
-              </a>
+              </button>
 
               {/* Secondary — outline */}
-              <a
-                href="https://evrlink.xyz"
-                target="_blank"
-                rel="noopener noreferrer"
+              {/* <button
+                type="button"
+                onClick={() => openContact("investors")}
                 style={{
                   display: "flex", alignItems: "center", justifyContent: "center",
                   gap: "7px", padding: "15px 32px", borderRadius: "999px",
@@ -282,13 +274,13 @@ export default function ClosingSection() {
                   cursor: "pointer",
                 }}
                 onMouseEnter={e => {
-                  const el = e.currentTarget as HTMLAnchorElement;
+                  const el = e.currentTarget;
                   el.style.background = G.goldBg;
                   el.style.borderColor = G.gold;
                   el.style.boxShadow = "0 0 20px rgba(201,168,76,0.18)";
                 }}
                 onMouseLeave={e => {
-                  const el = e.currentTarget as HTMLAnchorElement;
+                  const el = e.currentTarget;
                   el.style.background = "transparent";
                   el.style.borderColor = G.goldBorder;
                   el.style.boxShadow = "none";
@@ -299,7 +291,7 @@ export default function ClosingSection() {
                   <line x1="7" y1="17" x2="17" y2="7" />
                   <polyline points="7 7 17 7 17 17" />
                 </svg>
-              </a>
+              </button> */}
             </div>
 
             {/* Domain footnote */}
@@ -344,5 +336,6 @@ export default function ClosingSection() {
         .cs-grain { animation: cs-grain 0.4s steps(1) infinite; }
       `}</style>
     </section>
+    </>
   );
 }

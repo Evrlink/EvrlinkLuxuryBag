@@ -163,7 +163,7 @@ function StageCard({
 
       {/* Title */}
       <h3 style={{
-        fontFamily: "var(--font-cormorant), Georgia, serif",
+        fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
         fontSize: "clamp(1.6rem, 2.4vw, 2.2rem)",
         fontWeight: 300,
         lineHeight: 1.15,
@@ -246,14 +246,14 @@ export default function TheSolution() {
         transform: "translateY(-50%)",
         fontSize: "clamp(16rem, 30vw, 28rem)",
         fontWeight: 700,
-        fontFamily: "var(--font-cormorant), Georgia, serif",
+        fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
         color: "rgba(201,168,76,0.026)",
         letterSpacing: "-0.05em",
         lineHeight: 1,
         userSelect: "none",
         pointerEvents: "none",
       }}>
-        03
+        {/* 03 */}
       </div>
 
       <div style={{
@@ -276,7 +276,7 @@ export default function TheSolution() {
           marginBottom: "52px",
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            <div style={{ width: "28px", height: "1px", background: G.gold, opacity: 0.5 }} />
+            {/* <div style={{ width: "28px", height: "1px", background: G.gold, opacity: 0.5 }} /> */}
             <span style={{
               fontSize: "9.5px",
               fontWeight: 500,
@@ -284,7 +284,7 @@ export default function TheSolution() {
               textTransform: "uppercase",
               color: G.goldDim,
             }}>
-              03 — The Solution
+              The Solution
             </span>
           </div>
 
@@ -324,7 +324,7 @@ export default function TheSolution() {
         {/* Headline */}
         <h2 style={{
           ...fade(0.1),
-          fontFamily: "var(--font-cormorant), Georgia, serif",
+          fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
           fontSize: "clamp(3.2rem, 6.5vw, 6rem)",
           fontWeight: 300,
           lineHeight: 1.04,
@@ -353,7 +353,7 @@ export default function TheSolution() {
 
         {/* Flowing lines */}
         <div style={{ ...fade(0.28) }}>
-          <FlowingLines />
+          {/* <FlowingLines /> */}
         </div>
 
         {/* Connecting rail above cards */}
@@ -364,10 +364,11 @@ export default function TheSolution() {
           background: `linear-gradient(to right, transparent, rgba(201,168,76,0.22) 15%, rgba(201,168,76,0.22) 85%, transparent)`,
           marginBottom: "0",
           zIndex: 1,
+          marginTop: "50px",
         }} />
 
         {/* Stage cards */}
-        <div id="ts-cards">
+        {/* <div id="ts-cards">
           {stages.map((stage, i) => (
             <StageCard
               key={stage.num}
@@ -376,7 +377,7 @@ export default function TheSolution() {
               visible={visible}
             />
           ))}
-        </div>
+        </div> */}
       </div>
 
       <style>{`
