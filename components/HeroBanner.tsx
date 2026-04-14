@@ -5,7 +5,6 @@ import { useEffect, useRef } from "react";
 
 const G = {
   gold: "#C9A84C",
-  goldDim: "rgba(201,168,76,0.55)",
   cream: "#F5F0E8",
   creamDim: "rgba(245,240,232,0.45)",
   bg: "#131314",
@@ -118,44 +117,6 @@ export default function HeroBanner() {
           maxWidth: "980px",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "16px",
-            marginBottom: "44px",
-            animation: "heroFadeUp 1s ease 0.2s both",
-          }}
-        >
-          <div
-            style={{
-              width: "36px",
-              height: "1px",
-              background: `linear-gradient(to right, transparent, ${G.gold})`,
-              opacity: 0.55,
-            }}
-          />
-          <span
-            style={{
-              fontSize: "9px",
-              fontWeight: 500,
-              letterSpacing: "0.42em",
-              textTransform: "uppercase",
-              color: G.goldDim,
-            }}
-          >
-            Evrlink
-          </span>
-          <div
-            style={{
-              width: "36px",
-              height: "1px",
-              background: `linear-gradient(to left, transparent, ${G.gold})`,
-              opacity: 0.55,
-            }}
-          />
-        </div>
-
         <h1
           style={{
             fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
