@@ -93,7 +93,7 @@ export default function ClosingSection() {
       }} />
 
       {/* Content grid */}
-      <div id="cs-grid" style={{
+      <div id="" style={{
         position: "relative", zIndex: 2,
         width: "100%", maxWidth: "1260px",
         margin: "0 auto", padding: "100px 60px",
@@ -103,11 +103,11 @@ export default function ClosingSection() {
         <div style={{ display: "flex", flexDirection: "column" }}>
 
           {/* Section label */}
-          <div style={{ ...fade(0), display: "flex", alignItems: "center", gap: "12px", marginBottom: "52px" }}>
+          <div style={{ ...fade(0), display: "flex", alignItems: "center", gap: "12px", marginBottom: "35px" }}>
             {/* <div style={{ width: "28px", height: "1px", background: G.gold, opacity: 0.5 }} /> */}
             <span style={{
-              fontSize: "9.5px", fontWeight: 500,
-              letterSpacing: "0.22em", textTransform: "uppercase",
+              fontSize: "18px", fontWeight: 500,
+              letterSpacing: "2.5px", textTransform: "uppercase",
               color: G.goldDim,
             }}>
               Vision
@@ -117,41 +117,44 @@ export default function ClosingSection() {
           {/* Large left-aligned headline — three short lines */}
           <h2 style={{
             ...fade(0.1),
-            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
-            fontSize: "clamp(3.4rem, 6.5vw, 6rem)",
+            // fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
+            fontSize: "clamp(1.7rem, 4.5vw, 2.5rem)",
             fontWeight: 300,
-            lineHeight: 1.04,
-            letterSpacing: "-0.025em",
-            color: G.cream,
+            // lineHeight: 1.04,
+            letterSpacing: "2.5px",
+            lineHeight: "1.3",
+            color: G.gold,
             margin: "0 0 10px",
           }}>
-            Every luxury item
+           Generate lifetime revenue for brands
           </h2>
           <h2 style={{
             ...fade(0.18),
-            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
-            fontSize: "clamp(3.4rem, 6.5vw, 6rem)",
+            // fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
+            fontSize: "clamp(1.7rem, 4.5vw, 2.5rem)",
             fontWeight: 300,
-            lineHeight: 1.04,
-            letterSpacing: "-0.025em",
+            // lineHeight: 1.04,
+            letterSpacing: "2.5px",
+            lineHeight: "1.3",
             color: G.cream,
-            margin: "0 0 10px",
+            margin: "0 0 35px",
           }}>
-            will generate
+           Create trust and verification for consumers
           </h2>
-          <h2 style={{
+          {/* <h2 style={{
             ...fade(0.26),
-            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
-            fontSize: "clamp(3.4rem, 6.5vw, 6rem)",
+            // fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
+            fontSize: "clamp(1.7rem, 4.5vw, 2.5rem)",
             fontWeight: 400,
-            fontStyle: "italic",
-            lineHeight: 1.04,
-            letterSpacing: "-0.025em",
+            // fontStyle: "italic",
+            // lineHeight: 1.04,
+            letterSpacing: "2.5px",
+            lineHeight: "1.3",
             color: G.gold,
             margin: "0 0 48px",
           }}>
-            lifetime revenue.
-          </h2>
+            lifetime revenue
+          </h2> */}
 
           {/* Gold divider */}
           {/* <div style={{
@@ -170,8 +173,8 @@ export default function ClosingSection() {
             {(["Verified", "Protected", "Compounding value"] as const).map((word, i) => (
               <div key={word} style={{ display: "flex", alignItems: "center", gap: "14px" }}>
                 <span style={{
-                  fontSize: "10.5px", fontWeight: 400,
-                  letterSpacing: "0.16em", textTransform: "uppercase",
+                  fontSize: "13px", fontWeight: 400,
+                  letterSpacing: "2.5px", textTransform: "uppercase",
                   color: G.creamMid,
                 }}>{word}</span>
                 {i < 2 && (
@@ -186,19 +189,20 @@ export default function ClosingSection() {
           </div>
 
           {/* Tagline */}
-          <p style={{
+          {/* <p style={{
             ...fade(0.44),
-            fontSize: "13.5px", fontWeight: 300,
+            fontSize: "18px", fontWeight: 300,
             lineHeight: 1.8, color: G.creamDim,
-            maxWidth: "420px", margin: 0,
-            fontStyle: "italic",
+            letterSpacing: "2.5px",
+            // maxWidth: "420px", margin: 0,
+            // fontStyle: "italic",
           }}>
-            The standard infrastructure the industry has been missing.
-          </p>
+            The standard infrastructure the industry has been missing
+          </p> */}
         </div>
 
         {/* ── RIGHT: CTA card ────────────────────────────────────────── */}
-        <div style={{ ...fade(0.2), display: "flex", alignItems: "center", justifyContent: "center" }}>
+        {/* <div style={{ ...fade(0.2), display: "flex", alignItems: "center", justifyContent: "center" }}>
           <div style={{
             position: "relative",
             width: "100%", maxWidth: "400px",
@@ -207,13 +211,13 @@ export default function ClosingSection() {
             border: "1px solid rgba(201,168,76,0.14)",
             borderRadius: "2px",
           }}>
-            {/* Corner brackets */}
+            
             <div style={{ position: "absolute", top: "16px", left: "16px",   width: "14px", height: "14px", borderTop: `1px solid rgba(201,168,76,0.4)`, borderLeft:  `1px solid rgba(201,168,76,0.4)` }} />
             <div style={{ position: "absolute", top: "16px", right: "16px",  width: "14px", height: "14px", borderTop: `1px solid rgba(201,168,76,0.4)`, borderRight: `1px solid rgba(201,168,76,0.4)` }} />
             <div style={{ position: "absolute", bottom: "16px", left: "16px",  width: "14px", height: "14px", borderBottom: `1px solid rgba(201,168,76,0.4)`, borderLeft:  `1px solid rgba(201,168,76,0.4)` }} />
             <div style={{ position: "absolute", bottom: "16px", right: "16px", width: "14px", height: "14px", borderBottom: `1px solid rgba(201,168,76,0.4)`, borderRight: `1px solid rgba(201,168,76,0.4)` }} />
 
-            {/* Card label */}
+           
             <div style={{
               display: "flex", alignItems: "center", gap: "8px",
               marginBottom: "32px",
@@ -224,86 +228,46 @@ export default function ClosingSection() {
                 boxShadow: `0 0 6px ${G.gold}`, flexShrink: 0,
               }} />
               <span style={{
-                fontSize: "8.5px", fontWeight: 500,
-                letterSpacing: "0.24em", textTransform: "uppercase",
+                fontSize: "18px", fontWeight: 500,
+                letterSpacing: "2.5px", textTransform: "uppercase",
                 color: G.goldDim,
               }}>
                 Early Access — 2026
               </span>
             </div>
 
-            {/* Exclusive note */}
             <p style={{
-              fontSize: "15px", fontWeight: 300,
+              fontSize: "16px", fontWeight: 300,
               lineHeight: 1.82, color: G.creamMid,
               margin: "0 0 36px",
             }}>
-              We&apos;re building with a select group of luxury brands and partners in 2026.
+              We&apos;re building with a select group of luxury brands and partners in 2026
             </p>
 
-            {/* Gold rule */}
+
             <div style={{
               height: "1px",
               background: `linear-gradient(to right, ${G.goldBorder}, transparent)`,
               marginBottom: "36px",
             }} />
 
-            {/* CTA stack */}
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-              {/* Primary — filled gold */}
               <button
                 type="button"
                 onClick={() => openContact("early-access")}
                 className="rim-btn rim-btn--primary rim-btn--closing"
+                style={{
+                  fontSize: "18px",
+                  letterSpacing: "2.5px",
+                }}
               >
                 Get Early Access
               </button>
 
-              {/* Secondary — outline */}
-              {/* <button
-                type="button"
-                onClick={() => openContact("investors")}
-                style={{
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  gap: "7px", padding: "15px 32px", borderRadius: "999px",
-                  border: `1px solid ${G.goldBorder}`, background: "transparent",
-                  fontSize: "12px", fontWeight: 500, color: G.gold,
-                  letterSpacing: "0.12em", textTransform: "uppercase",
-                  textDecoration: "none",
-                  transition: "background 0.3s, border-color 0.3s, box-shadow 0.3s",
-                  cursor: "pointer",
-                }}
-                onMouseEnter={e => {
-                  const el = e.currentTarget;
-                  el.style.background = G.goldBg;
-                  el.style.borderColor = G.gold;
-                  el.style.boxShadow = "0 0 20px rgba(201,168,76,0.18)";
-                }}
-                onMouseLeave={e => {
-                  const el = e.currentTarget;
-                  el.style.background = "transparent";
-                  el.style.borderColor = G.goldBorder;
-                  el.style.boxShadow = "none";
-                }}
-              >
-                For Investors
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
-              </button> */}
+              
             </div>
-
-            {/* Domain footnote */}
-            <p style={{
-              fontSize: "10px", fontWeight: 300,
-              letterSpacing: "0.1em", color: "rgba(245,240,232,0.2)",
-              margin: "28px 0 0", textAlign: "center",
-            }}>
-              evrlink.xyz
-            </p>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <style>{`

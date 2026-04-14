@@ -21,6 +21,14 @@ const didotTitle = localFont({
   display: "swap",
 });
 
+const frutiger = localFont({
+  src: "../public/Frutiger.woff2",
+  weight: "400",
+  style: "normal",
+  variable: "--font-frutiger",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Evrlink — Luxury Ownership Infrastructure",
   description:
@@ -33,7 +41,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${didot.variable} ${didotTitle.variable}`}>
+    <html
+      lang="en"
+      className={`${didot.variable} ${didotTitle.variable} ${frutiger.variable}`}
+    >
       <body style={{ minHeight: "100%", display: "flex", flexDirection: "column" }}>
         <CursorDot />
         {children}

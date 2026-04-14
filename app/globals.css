@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: var(--font-didot), "Didot", "Linotype Didot", Georgia, serif;
+  font-family: var(--font-frutiger), "Frutiger", "Avenir Next", "Segoe UI", Arial, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

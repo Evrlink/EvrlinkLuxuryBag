@@ -273,14 +273,14 @@ export default function TheSolution() {
           justifyContent: "space-between",
           flexWrap: "wrap",
           gap: "16px",
-          marginBottom: "52px",
+          marginBottom: "35px",
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
             {/* <div style={{ width: "28px", height: "1px", background: G.gold, opacity: 0.5 }} /> */}
             <span style={{
-              fontSize: "9.5px",
+              fontSize: "18px",
               fontWeight: 500,
-              letterSpacing: "0.22em",
+              letterSpacing: "2.5px",
               textTransform: "uppercase",
               color: G.goldDim,
             }}>
@@ -309,9 +309,9 @@ export default function TheSolution() {
               flexShrink: 0,
             }} />
             <span style={{
-              fontSize: "9px",
+              fontSize: "18px",
               fontWeight: 500,
-              letterSpacing: "0.16em",
+              letterSpacing: "1.5px",
               textTransform: "uppercase",
               color: G.goldDim,
               whiteSpace: "nowrap",
@@ -324,32 +324,32 @@ export default function TheSolution() {
         {/* Headline */}
         <h2 style={{
           ...fade(0.1),
-          fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
-          fontSize: "clamp(3.2rem, 6.5vw, 6rem)",
+          // fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
+          fontSize: "clamp(1.7rem, 4.5vw, 2.5rem)",
           fontWeight: 300,
-          lineHeight: 1.04,
-          letterSpacing: "-0.025em",
+          // lineHeight: 1.04,
+          // letterSpacing: "2px",
+          lineHeight: "1.3",
           color: G.cream,
           margin: "0 0 28px",
-          maxWidth: "900px",
+          // maxWidth: "900px",
         }}>
-          Every item. A permanent identity and history.
+         Every item generates lifetime revenue, history and verification
         </h2>
 
         {/* Subtitle */}
-        <p style={{
+        {/* <p style={{
           ...fade(0.2),
-          fontSize: "15px",
+          fontSize: "18px",
           fontWeight: 300,
           lineHeight: 1.82,
           color: G.creamMid,
-          maxWidth: "620px",
+          letterSpacing: "2.5px",
+          // maxWidth: "620px",
           margin: 0,
         }}>
-          Evrlink gives each luxury product a permanent digital identity — issued at first sale,
-          traveling with the item for its entire lifetime, and compliant with EU Digital Product
-          Passport requirements mandatory by 2030.
-        </p>
+         Every item generates lifetime revenue, history and verification.
+        </p> */}
 
         {/* Flowing lines */}
         <div style={{ ...fade(0.28) }}>

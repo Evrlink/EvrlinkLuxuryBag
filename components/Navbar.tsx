@@ -47,9 +47,9 @@ export default function Navbar() {
           boxShadow: `0 0 8px rgba(201,168,76,0.5)`,
         }} /> */}
         <span style={{
-          fontSize: "11.5px",
+          fontSize: "16px",
           fontWeight: 500,
-          letterSpacing: "0.22em",
+          letterSpacing: "5px",
           textTransform: "uppercase",
           color: G.cream,
         }}>
@@ -62,19 +62,24 @@ export default function Navbar() {
         <a
           href="#about"
           style={{
-            fontSize: "12.5px",
+            fontSize: "16px",
             color: G.creamDim,
             textDecoration: "none",
-            letterSpacing: "0.06em",
+            letterSpacing: "2.5px",
             transition: "color 0.2s",
           }}
           onMouseEnter={e => (e.currentTarget.style.color = G.gold)}
           onMouseLeave={e => (e.currentTarget.style.color = G.creamDim)}
         >
-          About
+          ABOUT
         </a>
 
-        <a href="#contact" className="rim-btn rim-btn--nav">
+        <a href="#contact" className="rim-btn rim-btn--nav"
+        style={{
+          fontSize: "16px",
+          letterSpacing: "2.5px",
+        }}
+        >
           Get Early Access
         </a>
       </div>

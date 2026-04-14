@@ -119,14 +119,16 @@ export default function HeroBanner() {
       >
         <h1
           style={{
-            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
-            fontSize: "clamp(3rem, 7vw, 6.5rem)",
+            // fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
+            fontSize: "clamp(3rem, 6.5vw, 5rem)",
             fontWeight: 400,
-            lineHeight: 1.06,
-            letterSpacing: "-0.02em",
+            // lineHeight: 1.06,
+            // letterSpacing: "-0.02em",
             color: G.cream,
-            margin: "0 0 10px",
+            margin: "0 0 15px",
             animation: "heroFadeUp 1.1s ease 0.4s both",
+            letterSpacing: "2.5px",
+            lineHeight: "1.3",
           }}
         >
           Every luxury item
@@ -136,12 +138,12 @@ export default function HeroBanner() {
 
         <h2
           style={{
-            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
-            fontSize: "clamp(2rem, 5vw, 4.6rem)",
+            // fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
+            fontSize: "clamp(2rem, 4.5vw, 2.7rem)",
             fontWeight: 400,
-            fontStyle: "italic",
+            // fontStyle: "italic",
             lineHeight: 1.12,
-            letterSpacing: "-0.02em",
+              letterSpacing: "2.5px",
             color: G.gold,
             margin: "0 0 48px",
             animation: "heroFadeUp 1.1s ease 0.58s both",
@@ -150,12 +152,12 @@ export default function HeroBanner() {
           Luxury brands don&apos;t see any of it
         </h2>
 
-        <p
+        {/* <p
           style={{
-            fontSize: "13.5px",
+            fontSize: "18px",
             fontWeight: 400,
             color: G.creamDim,
-            maxWidth: "360px",
+            maxWidth: "750px",
             lineHeight: 1.85,
             margin: "0 0 44px",
             animation: "heroFadeUp 1s ease 0.85s both",
@@ -163,7 +165,7 @@ export default function HeroBanner() {
         >
           Evrlink is the infrastructure that connects luxury brands to the lifetime value of their
           products
-        </p>
+        </p> */}
 
         <div
           style={{
@@ -175,11 +177,20 @@ export default function HeroBanner() {
             animation: "heroFadeUp 1s ease 1s both",
           }}
         >
-          <a href="#contact" className="rim-btn rim-btn--primary">
+          <a href="#contact" className="rim-btn rim-btn--primary"
+          style={{
+            fontSize: "16px",
+            letterSpacing: "2.5px",
+          }}
+          >
             Get Early Access
           </a>
 
-          <a href="#problem" className="rim-btn rim-btn--secondary">
+          {/* <a href="#problem" className="rim-btn rim-btn--secondary"
+          style={{
+            fontSize: "16px",
+          }}
+          >
             Learn More
             <svg
               width="10"
@@ -194,7 +205,7 @@ export default function HeroBanner() {
               <line x1="5" y1="12" x2="19" y2="12" />
               <polyline points="12 5 19 12 12 19" />
             </svg>
-          </a>
+          </a> */}
         </div>
       </div>
 

@@ -179,9 +179,9 @@ export default function TheProblem() {
           <div style={{ ...fade(0), display: "flex", alignItems: "center", gap: "12px", marginBottom: "44px" }}>
             {/* <div style={{ width: "28px", height: "1px", background: G.gold, opacity: 0.5 }} /> */}
             <span style={{
-              fontSize: "9.5px",
+              fontSize: "18px",
               fontWeight: 500,
-              letterSpacing: "0.22em",
+              letterSpacing: "2.5px",
               textTransform: "uppercase",
               color: G.goldDim,
             }}>
@@ -192,30 +192,32 @@ export default function TheProblem() {
           {/* Headline 1 — cream */}
           <h2 style={{
             ...fade(0.1),
-            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
-            fontSize: "clamp(3rem, 5.5vw, 5rem)",
+            // fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
+            fontSize: "clamp(1.7rem, 4.5vw, 2.5rem)",
             fontWeight: 300,
-            lineHeight: 1.08,
-            letterSpacing: "-0.02em",
+            // lineHeight: 1.08,
+            letterSpacing: "2.5px",
+            lineHeight: "1.3",
             margin: "0 0 6px",
             color: G.cream,
           }}>
-            Luxury created<br />the value
+            Luxury created the value
           </h2>
 
           {/* Headline 2 — gold italic */}
           <h2 style={{
             ...fade(0.2),
-            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
-            fontSize: "clamp(3rem, 5.5vw, 5rem)",
+            // fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
+            fontSize: "clamp(1.7rem, 4.5vw, 2.5rem)",
             fontWeight: 400,
-            fontStyle: "italic",
-            lineHeight: 1.08,
-            letterSpacing: "-0.02em",
-            margin: "0 0 48px",
+            // fontStyle: "italic",
+            // lineHeight: 1.08,
+            letterSpacing: "2.5px",
+            lineHeight: "1.3",
+            margin: "0 0 35px",
             color: G.gold,
           }}>
-            Platforms captured<br />the economics
+            Platforms capture the economics
           </h2>
 
           {/* Gold divider */}
@@ -228,48 +230,47 @@ export default function TheProblem() {
           }} /> */}
 
           {/* Body copy */}
-          <p style={{
+          {/* <p style={{
             ...fade(0.35),
-            fontSize: "15px",
+            fontSize: "18px",
             fontWeight: 300,
             lineHeight: 1.82,
             color: G.creamMid,
-            maxWidth: "480px",
-            margin: "0 0 28px",
+            // maxWidth: "480px",
+            margin: "0 0 35px",
           }}>
-            Brands invest billions in design, craft, and storytelling to build desirability.
-            That desirability doesn&apos;t expire at the point of sale; it compounds.
-          </p>
+            Brands invest billions in value. That Value doesn't expire at point of sale, it compounds
+          </p> */}
 
           {/* Left-border statement */}
-          <p style={{
+          {/* <p style={{
             ...fade(0.43),
-            fontSize: "14.5px",
+            fontSize: "18px",
             fontWeight: 300,
             lineHeight: 1.82,
             color: G.creamDim,
-            maxWidth: "480px",
+            // maxWidth: "480px",
             margin: "0 0 40px",
             // borderLeft: `1.5px solid ${G.goldBorder}`,
             // paddingLeft: "20px",
           }}>
             After the first sale, the connection between a brand and its product disappears.
-          </p>
+          </p> */}
 
           {/* Closing gold statement */}
           <p style={{
             ...fade(0.52),
-            fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
-            fontSize: "clamp(1.35rem, 2.2vw, 1.75rem)",
+            // fontFamily: "var(--font-didot-title), var(--font-didot), Georgia, serif",
+            fontSize: "clamp(1rem, 2.2vw, 18px)",
             fontWeight: 400,
             lineHeight: 1.42,
+            letterSpacing: "2.5px",
             color: G.gold,
             margin: 0,
           }}>
-            The value keeps growing.
-            <br />
-            <span style={{ color: G.goldBright, fontStyle: "italic" }}>
-              Now it can be captured.
+            {/* The value keeps growing.&nbsp; */}
+            <span style={{ color: G.goldBright }}>
+            Now Brands can capture lifetime value
             </span>
           </p>
         </div>
@@ -283,7 +284,7 @@ export default function TheProblem() {
       <style>{`
         #tp-grid {
           display: grid;
-          grid-template-columns: 1.1fr 0.9fr;
+          grid-template-columns: 1.4fr 0.6fr;
           gap: 80px;
           align-items: center;
         }
