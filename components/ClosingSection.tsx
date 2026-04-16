@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import ContactFormModal, { type ContactIntent } from "@/components/ContactFormModal";
 
 const G = {
   gold: "#C9A84C",
@@ -20,13 +19,6 @@ const NOISE_URI =
 export default function ClosingSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const [visible, setVisible] = useState(false);
-  const [contactOpen, setContactOpen] = useState(false);
-  const [contactIntent, setContactIntent] = useState<ContactIntent>("early-access");
-
-  const openContact = (intent: ContactIntent) => {
-    setContactIntent(intent);
-    setContactOpen(true);
-  };
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -48,15 +40,9 @@ export default function ClosingSection() {
   });
 
   return (
-    <>
-    <ContactFormModal
-      open={contactOpen}
-      intent={contactIntent}
-      onClose={() => setContactOpen(false)}
-    />
     <section
       ref={sectionRef}
-      id="contact"
+      id="vision"
       style={{
         position: "relative",
         width: "100%",
@@ -300,6 +286,5 @@ export default function ClosingSection() {
         .cs-grain { animation: cs-grain 0.4s steps(1) infinite; }
       `}</style>
     </section>
-    </>
   );
 }

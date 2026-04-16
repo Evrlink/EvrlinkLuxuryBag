@@ -4,6 +4,8 @@ import TheProblem from "@/components/TheProblem";
 import TheSolution from "@/components/TheSolution";
 import WhyNow from "@/components/WhyNow";
 import ClosingSection from "@/components/ClosingSection";
+import ContactSection from "@/components/ContactSection";
+import EndingStatementSection from "@/components/EndingStatementSection";
 import SectionScrollController from "@/components/SectionScrollController";
 
 export default function Home() {
@@ -16,6 +18,8 @@ export default function Home() {
       <TheSolution />
       {/* <WhyNow /> */}
       <ClosingSection />
+      <ContactSection />
+      <EndingStatementSection />
     </>
   );
 }
