@@ -7,6 +7,7 @@ import WhyNowNew from "@/components/WhyNowNew";
 import FinalCTANew from "@/components/FinalCTANew";
 import StatementNew from "@/components/StatementNew";
 import SiteFooter from "@/components/SiteFooter";
+import EarlyAccessPopup from "@/components/EarlyAccessPopup";
 
 // Previous components preserved (not deleted):
 // import Navbar from "@/components/Navbar";
@@ -22,6 +23,7 @@ import SiteFooter from "@/components/SiteFooter";
 export default function Home() {
   return (
     <>
+      <EarlyAccessPopup />
       <NavbarNew />
       <HeroNew />
       <ProblemNew />

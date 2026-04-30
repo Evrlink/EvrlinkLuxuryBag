@@ -331,7 +331,7 @@ export default function BenefitsNew() {
                 rowGap: "20px",
               }}
             >
-              <div
+              {/* <div
                 style={{
                   width: "42px",
                   height: "42px",
@@ -345,8 +345,8 @@ export default function BenefitsNew() {
                   fontWeight: 700,
                 }}
               >
-                {b.num}
-              </div>
+                {/* {b.num}
+              </div> */}
               <h3
                 style={{
                   fontWeight: 600,
@@ -414,7 +414,7 @@ export default function BenefitsNew() {
           grid-template-columns: 1fr 1fr;
           gap: 80px;
           align-items: start;
-          margin-bottom: 32px;
+          margin-bottom: 90px;
         }
         @media (max-width: 900px) {
           .ev-benefits-head {

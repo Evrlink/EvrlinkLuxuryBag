@@ -40,7 +40,7 @@ export default function TheGap() {
             lineHeight: 1.12,
             letterSpacing: "-0.022em",
             color: "#2a2a2a",
-            maxWidth: "24ch",
+            maxWidth: "28ch",
             margin: "0 auto 16px",
           }}
         >

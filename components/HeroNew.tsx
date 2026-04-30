@@ -144,10 +144,10 @@ export default function HeroNew() {
                 justifyContent: "center",
               }}
             >
-              <button type="button" className="ev-btn" onClick={scrollToContact}>
+              {/* <button type="button" className="ev-btn" onClick={scrollToContact}>
                 Get Early Access{" "}
                 <span className="ev-btn-arrow" aria-hidden="true" />
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

@@ -4,9 +4,9 @@ import type { CSSProperties, FormEvent } from "react";
 import { useId, useState } from "react";
 
 const G = {
-  goldDim: "rgba(201,168,76,0.55)",
-  cream: "#F5F0E8",
-  creamDim: "rgba(245,240,232,0.45)",
+  teal: "#00B2C7",
+  ink: "#2A2A2A",
+  inkDim: "rgba(42,42,42,0.65)",
 };
 
 export default function ContactForm() {
@@ -59,9 +59,9 @@ export default function ContactForm() {
         position: "relative",
         width: "100%",
         padding: "44px 40px 40px",
-        background: "rgba(255,255,255,0.022)",
-        border: "1px solid rgba(201,168,76,0.14)",
-        borderRadius: "2px",
+        background: "#ffffff",
+        border: "1px solid rgba(0,178,199,0.18)",
+        borderRadius: "10px",
       }}
     >
       <p
@@ -70,7 +70,7 @@ export default function ContactForm() {
           fontWeight: 500,
           letterSpacing: "2.5px",
           textTransform: "uppercase",
-          color: G.goldDim,
+          color: "rgba(0,178,199,0.72)",
           margin: "0 0 12px",
         }}
       >
@@ -83,7 +83,7 @@ export default function ContactForm() {
           fontWeight: 300,
           letterSpacing: "2.5px",
           lineHeight: 1.3,
-          color: G.cream,
+          color: G.ink,
           margin: "0 0 28px",
         }}
       >
@@ -96,7 +96,7 @@ export default function ContactForm() {
             style={{
               fontSize: "15px",
               fontWeight: 400,
-              color: G.creamDim,
+              color: G.inkDim,
               lineHeight: 1.75,
               letterSpacing: "0.02em",
               margin: 0,
@@ -107,7 +107,7 @@ export default function ContactForm() {
           <button
             type="button"
             onClick={reset}
-            className="rim-btn rim-btn--secondary rim-btn--compact"
+            className="ev-btn"
             style={{ marginTop: "24px" }}
           >
             Send another message
@@ -161,11 +161,10 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={status === "sending"}
-            className="rim-btn rim-btn--primary rim-btn--compact"
+            className="ev-btn"
             style={{
               width: "100%",
-              fontSize: "16px",
-              letterSpacing: "2.5px",
+              justifyContent: "center",
               marginTop: "8px",
             }}
           >
@@ -183,7 +182,7 @@ const labelStyle: CSSProperties = {
   fontWeight: 500,
   letterSpacing: "2.5px",
   textTransform: "uppercase",
-  color: G.creamDim,
+  color: G.inkDim,
   marginBottom: "18px",
 };
 
@@ -196,9 +195,9 @@ const inputStyle: CSSProperties = {
   fontWeight: 400,
   lineHeight: 1.5,
   letterSpacing: "0.02em",
-  color: G.cream,
-  background: "rgba(255,255,255,0.04)",
-  border: "1px solid rgba(201,168,76,0.2)",
+  color: G.ink,
+  background: "rgba(0,178,199,0.04)",
+  border: "1px solid rgba(0,178,199,0.24)",
   borderRadius: "4px",
   outline: "none",
   boxSizing: "border-box",
