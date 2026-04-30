@@ -59,12 +59,12 @@ export default function ProblemNew() {
           gridTemplateColumns: "1fr 1fr",
           gap: "64px",
           alignItems: "center",
-          maxWidth: "1100px",
+          maxWidth: "1360px",
           textAlign: "left",
         }}
       >
         {/* Copy */}
-        <div style={{ maxWidth: "440px" }}>
+        <div style={{ maxWidth: "600px" }}>
           <span
             className="ev-eyebrow"
             style={{ display: "inline-block", marginBottom: "20px" }}
@@ -74,7 +74,7 @@ export default function ProblemNew() {
           <h2
             style={{
               fontWeight: 400,
-              fontSize: "clamp(28px, 3.2vw, 44px)",
+              fontSize: "clamp(28px, 3.2vw, 40px)",
               lineHeight: 1.14,
               letterSpacing: "-0.02em",
               color: "#2a2a2a",
@@ -122,7 +122,7 @@ export default function ProblemNew() {
           style={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "center",
+            justifyContent: "flex-end",
           }}
         >
           <svg
@@ -191,9 +191,9 @@ export default function ProblemNew() {
 
             {/* Orbit labels */}
             <text x="200" y="12" textAnchor="middle" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="#00B2C7">1ST SALE</text>
-            <text x="392" y="204" textAnchor="end" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="rgba(15,20,24,0.55)">RESALE</text>
-            <text x="200" y="396" textAnchor="middle" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="rgba(15,20,24,0.55)">RESALE</text>
-            <text x="8" y="204" textAnchor="start" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="rgba(15,20,24,0.55)">RESALE</text>
+            <text x="392" y="204" textAnchor="end" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="rgba(15,20,24,0.55)">SOLD</text>
+            <text x="200" y="396" textAnchor="middle" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="rgba(15,20,24,0.55)">SOLD</text>
+            <text x="8" y="204" textAnchor="start" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="rgba(15,20,24,0.55)">SOLD</text>
           </svg>
         </div>
       </div>

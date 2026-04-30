@@ -5,11 +5,8 @@ import { useEffect, useState } from "react";
 export default function NavbarNew() {
   const [scrolled, setScrolled] = useState(false);
 
-  const scrollToContact = () => {
-    const section = document.getElementById("contact");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+  const openEarlyAccessPopup = () => {
+    window.dispatchEvent(new Event("open-early-access-popup"));
   };
 
   useEffect(() => {
@@ -57,26 +54,7 @@ export default function NavbarNew() {
             textTransform: "uppercase",
           }}
         >
-          <span
-            style={{
-              width: "22px",
-              height: "22px",
-              border: "1.25px solid #efe9de",
-              borderRadius: "50%",
-              position: "relative",
-              display: "inline-block",
-              flexShrink: 0,
-            }}
-          >
-            <span
-              style={{
-                position: "absolute",
-                inset: "5px",
-                borderRadius: "50%",
-                background: "#efe9de",
-              }}
-            />
-          </span>
+         
           Evrlink
         </a>
 
@@ -88,7 +66,7 @@ export default function NavbarNew() {
 
         {/* Right CTA */}
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <button type="button" className="ev-btn" onClick={scrollToContact}>
+          <button type="button" className="ev-btn" onClick={openEarlyAccessPopup}>
             Get Early Access
           </button>
         </div>

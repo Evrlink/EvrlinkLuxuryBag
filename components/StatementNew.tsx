@@ -34,7 +34,7 @@ export default function StatementNew() {
           gap: "24px",
         }}
       >
-        <div
+        {/* <div
           style={{
             display: "inline-flex",
             alignItems: "center",
@@ -49,7 +49,7 @@ export default function StatementNew() {
           <span style={{ width: "30px", height: "1px", background: "rgba(239,233,222,0.55)", display: "inline-block" }} />
           Evrlink
           <span style={{ width: "30px", height: "1px", background: "rgba(239,233,222,0.55)", display: "inline-block" }} />
-        </div>
+        </div> */}
 
         <h2
           style={{
