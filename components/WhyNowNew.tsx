@@ -65,7 +65,7 @@ export default function WhyNowNew() {
                 gap: "16px",
               }}
             >
-              <div
+              {/* <div
                 style={{
                   fontSize: "11px",
                   fontWeight: 700,
@@ -74,7 +74,7 @@ export default function WhyNowNew() {
                 }}
               >
                 {item.num}
-              </div>
+              </div> */}
               <h3
                 style={{
                   fontWeight: 600,
