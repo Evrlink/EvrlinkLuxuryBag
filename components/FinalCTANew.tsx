@@ -95,7 +95,7 @@ export default function FinalCTANew() {
                 marginBottom: "20px",
               }}
             >
-              Learn more on how to capture {" "}
+              Learn more on how to capture a{" "}
               <span style={{ color: "rgba(239,233,222,0.55)" }}>
                 products lifetime value
               </span>
