@@ -80,7 +80,7 @@ export default function FinalCTANew() {
           <div>
             <span
               className="ev-eyebrow ev-eyebrow--dark"
-              style={{ display: "inline-block", marginBottom: "20px" }}
+              style={{ display: "inline-block", marginBottom: "20px", fontSize: "16px" }}
             >
               Reach out and connect
             </span>
@@ -91,18 +91,18 @@ export default function FinalCTANew() {
                 lineHeight: 1.12,
                 letterSpacing: "-0.022em",
                 color: "#efe9de",
-                maxWidth: "14ch",
+                maxWidth: "15ch",
                 marginBottom: "20px",
               }}
             >
-              Learn more about the{" "}
+              Learn more on how to capture {" "}
               <span style={{ color: "rgba(239,233,222,0.55)" }}>
-                ownership layer
+                products lifetime value
               </span>
             </h2>
             <p
               style={{
-                fontSize: "16px",
+                fontSize: "18px",
                 lineHeight: 1.7,
                 color: "rgba(239,233,222,0.7)",
                 maxWidth: "46ch",

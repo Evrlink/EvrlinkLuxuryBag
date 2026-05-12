@@ -88,7 +88,7 @@ export default function HeroNew() {
         >
           <span
             style={{
-              fontSize: "13px",
+              fontSize: "16px",
               fontWeight: 500,
               letterSpacing: "0.04em",
               color: "rgba(245,242,236,0.72)",
@@ -127,7 +127,7 @@ export default function HeroNew() {
                 fontSize: "18px",
                 lineHeight: 1.55,
                 color: "rgba(245,242,236,0.72)",
-                maxWidth: "52ch",
+                maxWidth: "62ch",
                 marginBottom: "28px",
                 fontWeight: 400,
               }}

@@ -134,7 +134,7 @@ export default function EndingStatementSection() {
           }}
         >
     <span style={{ color: G.gold }}>
-    All Your Bags Belong To You        
+    Brands can collect on their investment      
     </span>
     </h2>
 

@@ -67,7 +67,7 @@ export default function ProblemNew() {
         <div style={{ maxWidth: "600px" }}>
           <span
             className="ev-eyebrow"
-            style={{ display: "inline-block", marginBottom: "20px" }}
+            style={{ display: "inline-block", marginBottom: "20px", fontSize: "16px" }}
           >
             The Problem
           </span>
@@ -85,12 +85,12 @@ export default function ProblemNew() {
             <span
               style={{ color: "#00B2C7", display: "block" }}
             >
-              Platforms captured the economics
+              Platforms capture lifetime profit
             </span>
           </h2>
           <p
             style={{
-              fontSize: "14px",
+              fontSize: "18px",
               lineHeight: 1.65,
               color: "rgba(15,20,24,0.68)",
               marginBottom: "20px",
@@ -102,7 +102,7 @@ export default function ProblemNew() {
           </p>
           <p
             style={{
-              fontSize: "11px",
+              fontSize: "18px",
               fontWeight: 600,
               letterSpacing: "0.22em",
               textTransform: "uppercase",
@@ -122,12 +122,12 @@ export default function ProblemNew() {
           style={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "flex-end",
+            justifyContent: "center",
           }}
         >
           <svg
             viewBox="0 0 400 400"
-            style={{ width: "100%", maxWidth: "380px", height: "auto", overflow: "visible" }}
+            style={{ width: "100%", maxWidth: "550px", height: "auto", overflow: "visible" }}
             xmlns="http://www.w3.org/2000/svg"
           >
             <circle cx="200" cy="200" r="178" fill="none" stroke="rgba(0,178,199,0.22)" strokeWidth="1" />

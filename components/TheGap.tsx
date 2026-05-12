@@ -28,7 +28,7 @@ export default function TheGap() {
       >
         <span
           className="ev-eyebrow"
-          style={{ display: "inline-block", marginBottom: "20px" }}
+          style={{ display: "inline-block", marginBottom: "20px", fontSize: "16px" }}
         >
           The Revenue Gap
         </span>
@@ -41,7 +41,7 @@ export default function TheGap() {
             letterSpacing: "-0.022em",
             color: "#2a2a2a",
             maxWidth: "28ch",
-            margin: "0 auto 16px",
+            margin: "0 auto 56px",
           }}
         >
           $52B in secondary luxury market
@@ -53,7 +53,7 @@ export default function TheGap() {
           </div>
         </h2>
 
-        <p
+        {/* <p
           style={{
             fontSize: "15px",
             lineHeight: 1.55,
@@ -64,7 +64,7 @@ export default function TheGap() {
         >
           Brands invest billions to build desirability. Platforms capture the
           upside
-        </p>
+        </p> */}
 
         {/* Two circles */}
         <div
