@@ -31,7 +31,7 @@ export default function BenefitsNew() {
           <div>
             <span
               className="ev-eyebrow"
-              style={{ display: "inline-block", marginBottom: "20px" }}
+              style={{ display: "inline-block", marginBottom: "20px", fontSize: "16px" }}
             >
               The Solution
             </span>
@@ -115,7 +115,7 @@ export default function BenefitsNew() {
                     style={{
                       fontFamily:
                         "var(--font-didot-title), var(--font-didot), Georgia, serif",
-                      fontSize: "12px",
+                      fontSize: "14px",
                       letterSpacing: "0.01em",
                       color: "#2a2a2a",
                     }}
@@ -150,12 +150,13 @@ export default function BenefitsNew() {
                   </div>
                   <div
                     style={{
-                      fontSize: "8.5px",
+                      fontSize: "10px",
                       fontWeight: 600,
                       letterSpacing: "0.22em",
                       textTransform: "uppercase",
                       color: "rgba(14,20,24,0.55)",
                       marginTop: "2px",
+                      textAlign: "center",
                     }}
                   >
                     Digital Certificate of Authenticity
@@ -205,7 +206,7 @@ export default function BenefitsNew() {
                     style={{
                       fontFamily:
                         "var(--font-didot), Georgia, serif",
-                      fontSize: "12.5px",
+                      fontSize: "14px",
                       color: "#2a2a2a",
                       letterSpacing: "0.01em",
                       textAlign: "center",
@@ -215,7 +216,7 @@ export default function BenefitsNew() {
                   </div>
                   <div
                     style={{
-                      fontSize: "8.5px",
+                      fontSize: "10px",
                       fontWeight: 500,
                       letterSpacing: "0.14em",
                       textTransform: "uppercase",
@@ -227,7 +228,7 @@ export default function BenefitsNew() {
                   </div>
                   <div
                     style={{
-                      fontSize: "8.5px",
+                      fontSize: "10px",
                       fontWeight: 500,
                       letterSpacing: "0.14em",
                       textTransform: "uppercase",
@@ -292,7 +293,7 @@ export default function BenefitsNew() {
 
                   <div
                     style={{
-                      fontSize: "9px",
+                      fontSize: "10px",
                       letterSpacing: "0.16em",
                       textTransform: "uppercase",
                       color: "rgba(14,20,24,0.55)",
@@ -350,7 +351,7 @@ export default function BenefitsNew() {
               <h3
                 style={{
                   fontWeight: 600,
-                  fontSize: "22px",
+                  fontSize: "24px",
                   lineHeight: 1.2,
                   letterSpacing: "-0.015em",
                   color: "#2a2a2a",
@@ -362,7 +363,7 @@ export default function BenefitsNew() {
               </h3>
               <p
                 style={{
-                  fontSize: "14.5px",
+                  fontSize: "18px",
                   lineHeight: 1.72,
                   color: "rgba(14,20,24,0.7)",
                   margin: 0,
@@ -385,7 +386,7 @@ export default function BenefitsNew() {
             display: "inline-flex",
             alignItems: "center",
             gap: "12px",
-            fontSize: "10.5px",
+            fontSize: "14px",
             fontWeight: 600,
             letterSpacing: "0.22em",
             textTransform: "uppercase",
