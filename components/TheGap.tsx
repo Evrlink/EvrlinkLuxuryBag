@@ -107,7 +107,7 @@ export default function TheGap() {
             </div>
             <div
               style={{
-                fontSize: "10px",
+                fontSize: "14px",
                 fontWeight: 600,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
@@ -153,7 +153,7 @@ export default function TheGap() {
             </div>
             <div
               style={{
-                fontSize: "10px",
+                fontSize: "14px",
                 fontWeight: 600,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
