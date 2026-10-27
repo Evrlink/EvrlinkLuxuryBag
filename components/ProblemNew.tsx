@@ -71,44 +71,42 @@ export default function ProblemNew() {
           >
             The Digital Record
           </span>
-          <h2
-            style={{
-              fontWeight: 400,
-              fontSize: "clamp(26px, 3vw, 37px)",
-              lineHeight: 1.14,
-              letterSpacing: "-0.02em",
-              color: "#2a2a2a",
-              marginBottom: "30px",
-            }}
-          >
-            A digital record for every purchase
-          </h2>
           <p
             style={{
               fontSize: "18px",
               lineHeight: 1.7,
               color: "rgba(15,20,24,0.68)",
-              marginBottom: "20px",
-              maxWidth: "440px",
-            }}
-          >
-            Evrlink helps brands issue a digital record for each piece. It
-            brings together the piece&apos;s image, purchase details, the
-            provenance or story the brand chooses to share. Recorded onchain,
-            customers have a lasting reference to their piece while helping
-            brands stay present beyond checkout.
-          </p>
-          <p
-            style={{
-              fontSize: "18px",
-              lineHeight: 1.7,
-              color: "#2a2a2a",
               margin: 0,
               maxWidth: "440px",
             }}
           >
-            The story of a piece should live beyond checkout.
+            Each record brings together an image of the piece, its purchase
+            details, and the provenance or story the brand chooses to share.
+            Customers can easily revisit the details that matter.
           </p>
+          <div className="ev-record-close">
+            <span
+              aria-hidden
+              style={{
+                display: "block",
+                width: "28px",
+                height: "1px",
+                background: "#00B2C7",
+                marginBottom: "16px",
+              }}
+            />
+            <p
+              style={{
+                fontSize: "18px",
+                lineHeight: 1.7,
+                color: "#2a2a2a",
+                margin: 0,
+                maxWidth: "440px",
+              }}
+            >
+              The story continues beyond the sale.
+            </p>
+          </div>
         </div>
 
         {/* SVG Orbit infographic */}
@@ -206,6 +204,12 @@ export default function ProblemNew() {
           4%   { transform: scale(3.5); opacity: 0;   }
           100% { transform: scale(3.5); opacity: 0;   }
         }
+        .ev-record-close {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 28px;
+        }
         @media (max-width: 860px) {
           #problem .ev-container {
             grid-template-columns: 1fr !important;
@@ -214,6 +218,9 @@ export default function ProblemNew() {
           }
           #problem .ev-container > div:first-child {
             margin: 0 auto;
+          }
+          #problem .ev-record-close {
+            align-items: center;
           }
         }
       `}</style>

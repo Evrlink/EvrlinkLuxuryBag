@@ -221,7 +221,7 @@ export default function HeroNew() {
             textAlign: "center",
           }}
         >
-          Give every piece a brand-issued digital record.
+          A digital record that carries a brand&apos;s story, heritage and relationship with customer beyond first sale.
         </p>
 
         <div
@@ -233,19 +233,6 @@ export default function HeroNew() {
           }}
         >
           <div>
-            <p
-              style={{
-                fontSize: "18px",
-                lineHeight: 1.7,
-                color: "#FAF9F6",
-                maxWidth: "34em",
-                margin: "0 auto 28px",
-                fontWeight: 400,
-              }}
-            >
-              A lasting way for customers to keep and revisit the pieces they
-              love, and for your brand&apos;s story to stay present beyond the first sale.
-            </p>
             <div
               style={{
                 display: "flex",
