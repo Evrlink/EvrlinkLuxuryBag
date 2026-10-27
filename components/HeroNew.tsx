@@ -78,40 +78,33 @@ export default function HeroNew() {
           alignItems: "center",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "18px",
-            marginBottom: "40px",
-          }}
-        >
-          <span
-            style={{
-              fontSize: "18px",
-              fontWeight: 500,
-              letterSpacing: "0.04em",
-              color: "rgba(245,242,236,0.72)",
-            }}
-          >
-            Luxury Infrastructure
-          </span>
-        </div>
-
         <h1
           style={{
             fontWeight: 400,
-            fontSize: "clamp(48px, 6.4vw, 92px)",
-            lineHeight: 1.1,
-            letterSpacing: "-0.02em",
+            fontSize: "clamp(42px, 6.8vw, 96px)",
+            lineHeight: 1.14,
+            letterSpacing: "-0.025em",
             color: "#f5f2ec",
-            marginBottom: "32px",
+            margin: "0 0 28px",
           }}
         >
-          Every luxury item
-          <br />
-          generates lifetime value
+          <span style={{ display: "block" }}>Make every purchase</span>
+          <span style={{ display: "block" }}>more meaningful</span>
         </h1>
+
+        <p
+          style={{
+            fontWeight: 400,
+            fontSize: "clamp(20px, 2.15vw, 28px)",
+            lineHeight: 1.4,
+            letterSpacing: "-0.01em",
+            color: "rgba(245,242,236,0.88)",
+            margin: "0 0 36px",
+            textAlign: "center",
+          }}
+        >
+          Give every piece a lasting digital record
+        </p>
 
         <div
           style={{
@@ -124,16 +117,16 @@ export default function HeroNew() {
           <div>
             <p
               style={{
-                fontSize: "20px",
-                lineHeight: 1.55,
+                fontSize: "18px",
+                lineHeight: 1.7,
                 color: "rgba(245,242,236,0.72)",
-                maxWidth: "62ch",
-                marginBottom: "28px",
+                maxWidth: "34em",
+                margin: "0 auto 28px",
                 fontWeight: 400,
               }}
             >
-              Luxury brands don&apos;t see any of it. Evrlink is the missing
-              infrastructure
+              A lasting way for customers to keep and revisit the pieces they
+              love, while your brand stays present beyond the first sale.
             </p>
             <div
               style={{
