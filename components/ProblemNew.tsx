@@ -69,7 +69,7 @@ export default function ProblemNew() {
             className="ev-eyebrow"
             style={{ display: "inline-block", marginBottom: "20px", fontSize: "16px" }}
           >
-            Digital Records for Luxury Brands
+            The Digital Record
           </span>
           <h2
             style={{
@@ -92,11 +92,11 @@ export default function ProblemNew() {
               maxWidth: "44ch",
             }}
           >
-            A digital record with each purchase. Each record brings together
-            the piece&apos;s image, purchase details and brand provenance,
-            creating a lasting story. Recorded onchain, it gives the owner a
-            lasting reference to the piece while extending the brand
-            relationship beyond checkout.
+            Each record brings together the piece&apos;s image and purchase
+            details, alongside the provenance and story the brand chooses to
+            share. Associated with the purchase and recorded onchain, it gives
+            the owner a lasting reference to the piece. It also gives the brand
+            a way to extend the relationship beyond checkout.
           </p>
         </div>
 

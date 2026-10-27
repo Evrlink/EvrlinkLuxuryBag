@@ -2,310 +2,125 @@ export default function BenefitsNew() {
   const benefits = [
     {
       num: "01",
-      title: "Lifetime revenue",
-      body: "The brand earns on every resale, rental and transfer for the lifetime of the item. New margin from the same unit.",
+      title: "A purchase record customers can revisit",
     },
     {
       num: "02",
-      title: "Verification & brand protection",
-      body: "Every item is authenticated at handoff. Counterfeits are cut out of the resale market.",
+      title: "The piece's story, shared by the brand",
     },
     {
       num: "03",
-      title: "Data",
-      body: "Every transfer, owner and repair is logged. Brands collect data, where demand lives and how value travels.",
+      title: "Authentic, brand-provided information about the piece, available to reference after the sale",
+    },
+    {
+      num: "04",
+      title: "A connection that continues beyond checkout",
     },
   ];
 
   return (
     <section
       id="benefits"
-      style={{ padding: "80px 0", background: "#ffffff" }}
+      style={{ padding: "112px 0 80px", background: "#ffffff" }}
     >
       <div
         className="ev-container"
         style={{ display: "flex", flexDirection: "column", alignItems: "stretch" }}
       >
-        {/* Head: eyebrow + title left, phone right */}
-        <div className="ev-benefits-head">
+        <div className="evr-solution__inner">
           <div>
-            <span
-              className="ev-eyebrow"
-              style={{ display: "inline-block", marginBottom: "20px", fontSize: "16px" }}
-            >
-              The Solution
-            </span>
-            <h2
-              style={{
-                fontWeight: 400,
-                fontSize: "clamp(32px, 3.8vw, 52px)",
-                lineHeight: 1.12,
-                letterSpacing: "-0.022em",
-                color: "#2a2a2a",
-                maxWidth: "18ch",
-                margin: 0,
-              }}
-            >
-              Every item generates{" "}
-              <span style={{ color: "rgba(14,20,24,0.5)" }}>
-                lifetime revenue, history and verification
-              </span>
+            <p className="evr-eyebrow">The Solution</p>
+            <h2 id="evr-solution-title">
+              The piece, its purchase, and its story, together in one digital record.
             </h2>
+            <p className="evr-solution__body">
+              Evrlink helps luxury brands issue a digital record associated with
+              each purchase. It brings together an image of the piece and its
+              purchase details, alongside the provenance and story the brand
+              chooses to share. Recorded onchain, it gives customers an
+              accessible reference to revisit, and gives brands a way to
+              continue the relationship beyond checkout.
+            </p>
           </div>
 
-          {/* Phone mockup */}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <div
-              style={{
-                width: "248px",
-                background: "#f5f2ea",
-                borderRadius: "38px",
-                padding: "8px",
-                boxShadow:
-                  "0 30px 60px -20px rgba(14,20,24,0.22), 0 10px 24px -10px rgba(14,20,24,0.15)",
-                position: "relative",
-                border: "1px solid rgba(14,20,24,0.08)",
-              }}
-            >
-              {/* Notch */}
-              <div
-                style={{
-                  position: "absolute",
-                  top: "16px",
-                  left: "50%",
-                  transform: "translateX(-50%)",
-                  width: "64px",
-                  height: "6px",
-                  background: "rgba(14,20,24,0.6)",
-                  borderRadius: "6px",
-                  zIndex: 2,
-                }}
-              />
+          <figure className="evr-card-stage">
+            <article className="evc-card" aria-label="Example Evrlink digital record">
+              <header className="evc-head">
+                <p className="evc-wordmark">EVRLINK</p>
+                <p className="evc-cardname">Digital Record</p>
+              </header>
 
-              {/* Screen */}
-              <div
-                style={{
-                  background: "#ffffff",
-                  borderRadius: "30px",
-                  padding: "32px 0 16px",
-                  color: "#2a2a2a",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                {/* Top bar */}
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    padding: "2px 18px 14px",
-                    borderBottom: "1px solid rgba(14,20,24,0.07)",
-                    fontSize: "11px",
-                  }}
-                >
-                  <span style={{ color: "#2a6cf4", fontWeight: 400 }}>&nbsp;</span>
-                  <span
-                    style={{
-                      fontFamily:
-                        "var(--font-didot-title), var(--font-didot), Georgia, serif",
-                      fontSize: "14px",
-                      letterSpacing: "0.01em",
-                      color: "#2a2a2a",
-                    }}
-                  >
-                    ATELIER · Digital Passport
-                  </span>
-                  <span style={{ fontWeight: 600 }}>&nbsp;</span>
-                </div>
-
-                {/* Card content */}
-                <div
-                  style={{
-                    padding: "22px 22px 18px",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    gap: "6px",
-                  }}
-                >
-                  <div
-                    style={{
-                      fontFamily:
-                        "var(--font-didot-title), var(--font-didot), Georgia, serif",
-                      fontWeight: 400,
-                      fontSize: "22px",
-                      letterSpacing: "0.24em",
-                      color: "#2a2a2a",
-                      marginTop: "2px",
-                    }}
-                  >
-                    ATELIER
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "10px",
-                      fontWeight: 600,
-                      letterSpacing: "0.22em",
-                      textTransform: "uppercase",
-                      color: "rgba(14,20,24,0.55)",
-                      marginTop: "2px",
-                      textAlign: "center",
-                    }}
-                  >
-                    Digital Certificate of Authenticity
-                  </div>
-
-                  {/* Product image area */}
-                  <div
-                    style={{
-                      width: "100%",
-                      aspectRatio: "16 / 10",
-                      background: "#f5f2ea",
-                      margin: "10px 0",
-                      borderRadius: "2px",
-                      overflow: "hidden",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <svg
-                      viewBox="0 0 160 120"
-                      width="100%"
-                      height="100%"
-                      preserveAspectRatio="xMidYMid meet"
-                      aria-hidden="true"
-                    >
-                      <defs>
-                        <linearGradient id="bagG2" x1="0" x2="0" y1="0" y2="1">
-                          <stop offset="0" stopColor="#c9a96a" />
-                          <stop offset="1" stopColor="#8c6f3f" />
-                        </linearGradient>
-                      </defs>
-                      <rect x="0" y="0" width="160" height="120" fill="#f5f2ea" />
-                      <path
-                        d="M52 48 Q80 28 108 48 L108 54 L52 54 Z"
-                        fill="none"
-                        stroke="#8c6f3f"
-                        strokeWidth="1.6"
-                      />
-                      <rect x="44" y="54" width="72" height="48" rx="3" fill="url(#bagG2)" />
-                      <line x1="80" y1="54" x2="80" y2="102" stroke="#6b5329" strokeWidth="0.6" opacity="0.4" />
-                      <rect x="74" y="68" width="12" height="8" rx="1.5" fill="#6b5329" opacity="0.55" />
-                    </svg>
-                  </div>
-
-                  <div
-                    style={{
-                      fontFamily:
-                        "var(--font-didot), Georgia, serif",
-                      fontSize: "14px",
-                      color: "#2a2a2a",
-                      letterSpacing: "0.01em",
-                      textAlign: "center",
-                    }}
-                  >
-                    Avenue Shoulder Bag
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "10px",
-                      fontWeight: 500,
-                      letterSpacing: "0.14em",
-                      textTransform: "uppercase",
-                      color: "rgba(14,20,24,0.55)",
-                      textAlign: "center",
-                    }}
-                  >
-                    Limited &amp; numbered edition
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "10px",
-                      fontWeight: 500,
-                      letterSpacing: "0.14em",
-                      textTransform: "uppercase",
-                      color: "rgba(14,20,24,0.7)",
-                      textAlign: "center",
-                      fontStyle: "italic",
-                    }}
-                  >
-                    Certified on Evrlink
-                  </div>
-
-                  {/* QR code */}
-                  <div style={{ width: "76px", height: "76px", margin: "10px 0 6px" }} aria-hidden="true">
-                    <svg viewBox="0 0 100 100" width="100%" height="100%">
-                      <rect width="100" height="100" fill="#fff" />
-                      <g fill="#14191e">
-                        <rect x="6" y="6" width="22" height="22" />
-                        <rect x="10" y="10" width="14" height="14" fill="#fff" />
-                        <rect x="13" y="13" width="8" height="8" />
-                        <rect x="72" y="6" width="22" height="22" />
-                        <rect x="76" y="10" width="14" height="14" fill="#fff" />
-                        <rect x="79" y="13" width="8" height="8" />
-                        <rect x="6" y="72" width="22" height="22" />
-                        <rect x="10" y="76" width="14" height="14" fill="#fff" />
-                        <rect x="13" y="79" width="8" height="8" />
-                        <rect x="34" y="8" width="4" height="4" />
-                        <rect x="40" y="8" width="4" height="4" />
-                        <rect x="46" y="8" width="4" height="4" />
-                        <rect x="56" y="8" width="4" height="4" />
-                        <rect x="62" y="12" width="4" height="4" />
-                        <rect x="34" y="16" width="4" height="4" />
-                        <rect x="42" y="18" width="4" height="4" />
-                        <rect x="50" y="20" width="4" height="4" />
-                        <rect x="58" y="18" width="4" height="4" />
-                        <rect x="34" y="30" width="4" height="4" />
-                        <rect x="40" y="32" width="4" height="4" />
-                        <rect x="48" y="30" width="4" height="4" />
-                        <rect x="56" y="34" width="4" height="4" />
-                        <rect x="34" y="40" width="4" height="4" />
-                        <rect x="42" y="38" width="4" height="4" />
-                        <rect x="50" y="42" width="4" height="4" />
-                        <rect x="60" y="40" width="4" height="4" />
-                        <rect x="34" y="50" width="4" height="4" />
-                        <rect x="42" y="50" width="4" height="4" />
-                        <rect x="48" y="54" width="4" height="4" />
-                        <rect x="58" y="50" width="4" height="4" />
-                        <rect x="34" y="60" width="4" height="4" />
-                        <rect x="40" y="62" width="4" height="4" />
-                        <rect x="50" y="60" width="4" height="4" />
-                        <rect x="56" y="64" width="4" height="4" />
-                        <rect x="34" y="72" width="4" height="4" />
-                        <rect x="42" y="76" width="4" height="4" />
-                        <rect x="50" y="74" width="4" height="4" />
-                        <rect x="60" y="72" width="4" height="4" />
-                        <rect x="34" y="84" width="4" height="4" />
-                        <rect x="40" y="82" width="4" height="4" />
-                        <rect x="48" y="86" width="4" height="4" />
-                        <rect x="56" y="84" width="4" height="4" />
-                      </g>
-                    </svg>
-                  </div>
-
-                  <div
-                    style={{
-                      fontSize: "10px",
-                      letterSpacing: "0.16em",
-                      textTransform: "uppercase",
-                      color: "rgba(14,20,24,0.55)",
-                      fontWeight: 500,
-                    }}
-                  >
-                    atelier
-                  </div>
+              <div className="evc-product">
+                <img
+                  src="/evrlink-gown.jpg"
+                  alt="Georges Hobeika Draped Off-Shoulder Mermaid Gown in Blue Quarry on the runway"
+                />
+                <div>
+                  <dl className="evc-ident">
+                    <dt className="evc-label">Designer</dt>
+                    <dd className="evc-designer">Georges Hobeika</dd>
+                  </dl>
+                  <dl className="evc-ident">
+                    <dt className="evc-label">Product</dt>
+                    <dd className="evc-name">Draped Off-Shoulder Mermaid Gown</dd>
+                  </dl>
+                  <dl className="evc-specs">
+                    <div><dt className="evc-label">Collection</dt><dd>Spring/Summer 2026</dd></div>
+                    <div><dt className="evc-label">Color</dt><dd>Blue Quarry</dd></div>
+                    <div><dt className="evc-label">Size</dt><dd>FR 40</dd></div>
+                    <div><dt className="evc-label">Material</dt><dd>Chiffon</dd></div>
+                    <div><dt className="evc-label">Made in</dt><dd>Lebanon</dd></div>
+                    <div><dt className="evc-label">SKU</dt><dd>GH-SS26-052-LD</dd></div>
+                  </dl>
                 </div>
               </div>
-            </div>
-          </div>
+
+              <div className="evc-record">
+                <div>
+                  <h3>Authenticity Record</h3>
+                  <dl>
+                    <dt className="evc-label">Record No.</dt>
+                    <dd>EVR-0000-000000</dd>
+                    <dt className="evc-label">Purchase Date</dt>
+                    <dd>October 13, 2026</dd>
+                    <dt className="evc-label">Order Ref.</dt>
+                    <dd>ord_0000000000000000</dd>
+                  </dl>
+                </div>
+                <div className="evc-qr">
+                  <svg viewBox="0 0 29 29" shapeRendering="crispEdges" role="img" aria-label="QR code illustration">
+                    <defs>
+                      <pattern id="evcqr" width="7" height="7" patternUnits="userSpaceOnUse" x="2" y="2">
+                        <path fill="#141414" d="M0 0h1v1H0zM2 0h2v1H2zM5 0h1v2H5zM1 1h1v1H1zM3 2h1v2H3zM0 3h2v1H0zM6 3h1v1H6zM4 4h2v1H4zM1 5h1v2H1zM3 5h1v1H3zM6 5h1v1H6zM2 6h2v1H2zM5 6h1v1H5z" />
+                      </pattern>
+                    </defs>
+                    <rect width="29" height="29" fill="#fff" />
+                    <rect x="2" y="2" width="25" height="25" fill="url(#evcqr)" />
+                    <rect x="2" y="2" width="8" height="8" fill="#fff" />
+                    <rect x="2" y="2" width="7" height="7" fill="#141414" />
+                    <rect x="3" y="3" width="5" height="5" fill="#fff" />
+                    <rect x="4" y="4" width="3" height="3" fill="#141414" />
+                    <rect x="19" y="2" width="8" height="8" fill="#fff" />
+                    <rect x="20" y="2" width="7" height="7" fill="#141414" />
+                    <rect x="21" y="3" width="5" height="5" fill="#fff" />
+                    <rect x="22" y="4" width="3" height="3" fill="#141414" />
+                    <rect x="2" y="19" width="8" height="8" fill="#fff" />
+                    <rect x="2" y="20" width="7" height="7" fill="#141414" />
+                    <rect x="3" y="21" width="5" height="5" fill="#fff" />
+                    <rect x="4" y="22" width="3" height="3" fill="#141414" />
+                  </svg>
+                  <span className="evc-save" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M8 2v8M4.5 6.8 8 10.3l3.5-3.5M2.5 11v2.5h11V11" />
+                    </svg>
+                    <span>Save certificate</span>
+                  </span>
+                </div>
+              </div>
+
+              <p className="evc-foot">This record was created at purchase and cannot be altered.</p>
+            </article>
+          </figure>
         </div>
 
         {/* Benefits grid */}
@@ -313,7 +128,7 @@ export default function BenefitsNew() {
           className="ev-benefits-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
+            gridTemplateColumns: "repeat(2, 1fr)",
             borderTop: "1px solid rgba(14,20,24,0.08)",
           }}
         >
@@ -323,13 +138,11 @@ export default function BenefitsNew() {
               style={{
                 padding: "40px 40px 36px",
                 borderRight:
-                  i < benefits.length - 1
-                    ? "1px solid rgba(14,20,24,0.08)"
-                    : "none",
+                  i % 2 === 0 ? "1px solid rgba(14,20,24,0.08)" : "none",
+                borderBottom:
+                  i < 2 ? "1px solid rgba(14,20,24,0.08)" : "none",
                 display: "grid",
-                gridTemplateRows: "42px 72px auto",
                 alignItems: "start",
-                rowGap: "20px",
               }}
             >
               {/* <div
@@ -361,67 +174,153 @@ export default function BenefitsNew() {
               >
                 {b.title}
               </h3>
-              <p
-                style={{
-                  fontSize: "18px",
-                  lineHeight: 1.72,
-                  color: "rgba(14,20,24,0.7)",
-                  margin: 0,
-                  alignSelf: "start",
-                }}
-              >
-                {b.body}
-              </p>
             </div>
           ))}
-        </div>
-
-        {/* Compliance badge */}
-        <div
-          style={{
-            marginTop: "32px",
-            padding: "14px 24px",
-            border: "1px solid rgba(14,20,24,0.08)",
-            borderRadius: "999px",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "12px",
-            fontSize: "14px",
-            fontWeight: 600,
-            letterSpacing: "0.22em",
-            textTransform: "uppercase",
-            color: "rgba(14,20,24,0.7)",
-            background: "#fff",
-            alignSelf: "center",
-          }}
-        >
-          <span
-            style={{
-              width: "6px",
-              height: "6px",
-              borderRadius: "50%",
-              background: "#00B2C7",
-              boxShadow: "0 0 10px rgba(0,178,199,0.55)",
-              flexShrink: 0,
-            }}
-          />
-          EU Digital Product Passport · Compliant by 2030
         </div>
       </div>
 
       <style>{`
-        .ev-benefits-head {
+        .evr-solution__inner {
           display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 80px;
-          align-items: start;
-          margin-bottom: 90px;
+          grid-template-columns: minmax(0, 1fr) minmax(0, 560px);
+          column-gap: 88px;
+          align-items: center;
+          margin-bottom: 88px;
+        }
+        .evr-eyebrow {
+          margin: 0 0 24px;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.24em;
+          text-transform: uppercase;
+          color: #6e6e6e;
+        }
+        .evr-solution__inner h2 {
+          margin: 0 0 32px;
+          font-weight: 400;
+          color: #141414;
+          font-size: clamp(36px, 4vw, 54px);
+          line-height: 1.1;
+          letter-spacing: -0.01em;
+          text-wrap: balance;
+        }
+        .evr-solution__body {
+          margin: 0;
+          max-width: 34em;
+          font-size: 19px;
+          line-height: 1.65;
+          color: #4d4d4d;
+        }
+        .evr-card-stage { margin: 0; }
+        .evc-card {
+          width: 100%;
+          background: #fff;
+          color: #141414;
+          font-family: var(--font-didot), Garamond, "Times New Roman", serif;
+          border: 1px solid #e4e1dc;
+          padding: 36px 36px 28px;
+          box-shadow: 0 1px 2px rgba(20,20,20,0.04), 0 12px 24px -8px rgba(20,20,20,0.08), 0 40px 80px -24px rgba(20,20,20,0.14);
+        }
+        .evc-head { text-align: center; padding-bottom: 20px; border-bottom: 1px solid #e4e1dc; }
+        .evc-wordmark { margin: 0 -0.42em 0 0; font-weight: 400; font-size: 28px; line-height: 1; letter-spacing: 0.42em; }
+        .evc-cardname { margin: 10px 0 0; font-size: 17px; color: #4a4642; }
+        .evc-label {
+          font-family: var(--font-frutiger), "Avenir Next", "Segoe UI", sans-serif;
+          font-size: 10px;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: #6b6762;
+        }
+        .evc-product {
+          display: grid;
+          grid-template-columns: 190px minmax(0, 1fr);
+          gap: 28px;
+          padding: 22px 0;
+          border-bottom: 1px solid #e4e1dc;
+        }
+        .evc-product img { display: block; width: 100%; height: 266px; object-fit: cover; object-position: 50% 0; }
+        .evc-ident { margin: 0 0 12px; }
+        .evc-ident dd { margin: 4px 0 0; }
+        .evc-designer { font-size: 16px; letter-spacing: 0.08em; text-transform: uppercase; }
+        .evc-name { font-size: 17px; line-height: 1.25; }
+        .evc-specs { margin: 0; border-top: 1px solid #e4e1dc; }
+        .evc-specs div {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          gap: 12px;
+          padding: 7px 0;
+          border-bottom: 1px solid #e4e1dc;
+        }
+        .evc-specs div:last-child { border-bottom: 0; padding-bottom: 0; }
+        .evc-specs dd { margin: 0; font-size: 14px; text-align: right; }
+        .evc-record {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) auto;
+          gap: 24px;
+          align-items: center;
+          padding: 22px 0;
+          border-bottom: 1px solid #e4e1dc;
+        }
+        .evc-record h3 {
+          margin: 0 0 14px;
+          font-weight: 400;
+          font-size: 13px;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          font-family: var(--font-didot), Garamond, "Times New Roman", serif;
+        }
+        .evc-record dl {
+          margin: 0;
+          display: grid;
+          grid-template-columns: 118px minmax(0, 1fr);
+          row-gap: 8px;
+          align-items: baseline;
+        }
+        .evc-record dd {
+          margin: 0;
+          font-family: var(--font-frutiger), "Avenir Next", "Segoe UI", sans-serif;
+          font-size: 13px;
+          white-space: nowrap;
+        }
+        .evc-qr { text-align: center; padding-left: 24px; border-left: 1px solid #e4e1dc; }
+        .evc-qr svg {
+          display: block;
+          width: 104px;
+          height: 104px;
+          padding: 6px;
+          border: 1px solid #e4e1dc;
+          background: #fff;
+        }
+        .evc-save {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          margin-top: 8px;
+          font-family: var(--font-frutiger), "Avenir Next", "Segoe UI", sans-serif;
+          font-size: 11px;
+          letter-spacing: 0.06em;
+          color: #4a4642;
+        }
+        .evc-save svg { width: 12px; height: 12px; padding: 0; border: 0; }
+        .evc-save span { border-bottom: 1px solid #e4e1dc; padding-bottom: 1px; }
+        .evc-foot { margin: 18px 0 0; font-size: 14px; color: #4a4642; }
+        @media (max-width: 1080px) {
+          .evr-solution__inner { grid-template-columns: 1fr; row-gap: 56px; }
+          .evr-solution__inner h2 { max-width: 20ch; }
+          .evr-card-stage { max-width: 560px; }
+        }
+        @media (max-width: 560px) {
+          .evr-solution__body { font-size: 17px; }
+          .evc-card { padding: 28px 20px 22px; }
+          .evc-wordmark { font-size: 24px; }
+          .evc-product { grid-template-columns: 1fr; gap: 20px; }
+          .evc-product img { height: 320px; }
+          .evc-record { grid-template-columns: 1fr; }
+          .evc-qr { padding-left: 0; border-left: 0; justify-self: start; text-align: left; }
+          .evc-record dd { white-space: normal; }
         }
         @media (max-width: 900px) {
-          .ev-benefits-head {
-            grid-template-columns: 1fr !important;
-            gap: 48px !important;
-          }
           .ev-benefits-grid {
             grid-template-columns: 1fr !important;
           }
