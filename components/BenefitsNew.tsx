@@ -21,7 +21,7 @@ export default function BenefitsNew() {
   return (
     <section
       id="benefits"
-      style={{ padding: "112px 0 80px", background: "#ffffff" }}
+      style={{ padding: "88px 0", background: "#ffffff" }}
     >
       <div
         className="ev-container"
@@ -163,9 +163,9 @@ export default function BenefitsNew() {
               </div> */}
               <h3
                 style={{
-                  fontWeight: 600,
-                  fontSize: "24px",
-                  lineHeight: 1.2,
+                  fontWeight: 500,
+                  fontSize: "22px",
+                  lineHeight: 1.3,
                   letterSpacing: "-0.015em",
                   color: "#2a2a2a",
                   margin: 0,
@@ -188,27 +188,27 @@ export default function BenefitsNew() {
           margin-bottom: 88px;
         }
         .evr-eyebrow {
-          margin: 0 0 24px;
-          font-size: 14px;
-          font-weight: 500;
+          margin: 0 0 28px;
+          font-size: 13px;
+          font-weight: 600;
           letter-spacing: 0.24em;
           text-transform: uppercase;
           color: #6e6e6e;
         }
         .evr-solution__inner h2 {
-          margin: 0 0 32px;
+          margin: 0 0 30px;
           font-weight: 400;
           color: #141414;
-          font-size: clamp(36px, 4vw, 54px);
-          line-height: 1.1;
-          letter-spacing: -0.01em;
+          font-size: clamp(30px, 3.2vw, 48px);
+          line-height: 1.14;
+          letter-spacing: -0.02em;
           text-wrap: balance;
         }
         .evr-solution__body {
           margin: 0;
-          max-width: 34em;
-          font-size: 19px;
-          line-height: 1.65;
+          max-width: 440px;
+          font-size: 18px;
+          line-height: 1.7;
           color: #4d4d4d;
         }
         .evr-card-stage { margin: 0; }

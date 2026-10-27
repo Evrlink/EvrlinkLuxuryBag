@@ -3,7 +3,7 @@ export default function StatementNew() {
     <section
       style={{
         background: "#2a2a2a",
-        padding: "40px 0 80px",
+        padding: "40px 0 88px",
         position: "relative",
         overflow: "hidden",
       }}

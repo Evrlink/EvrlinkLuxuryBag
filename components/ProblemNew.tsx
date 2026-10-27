@@ -5,7 +5,7 @@ export default function ProblemNew() {
     <section
       id="problem"
       style={{
-        padding: "80px 0",
+        padding: "88px 0",
         background: "#ECEEF0",
         color: "#2a2a2a",
         position: "relative",
@@ -67,7 +67,7 @@ export default function ProblemNew() {
         <div style={{ maxWidth: "600px" }}>
           <span
             className="ev-eyebrow"
-            style={{ display: "inline-block", marginBottom: "30px", fontSize: "16px" }}
+            style={{ display: "inline-block", marginBottom: "28px" }}
           >
             The Digital Record
           </span>
@@ -97,6 +97,17 @@ export default function ProblemNew() {
             provenance or story the brand chooses to share. Recorded onchain,
             customers have a lasting reference to their piece while helping
             brands stay present beyond checkout.
+          </p>
+          <p
+            style={{
+              fontSize: "18px",
+              lineHeight: 1.7,
+              color: "#2a2a2a",
+              margin: 0,
+              maxWidth: "440px",
+            }}
+          >
+            The story of a piece should live beyond checkout.
           </p>
         </div>
 

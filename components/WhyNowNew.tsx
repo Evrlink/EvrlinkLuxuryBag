@@ -18,21 +18,21 @@ export default function WhyNowNew() {
   ];
 
   return (
-    <section style={{ padding: "80px 0", background: "#ECEEF0" }}>
+    <section style={{ padding: "88px 0", background: "#ECEEF0" }}>
       <div className="ev-container">
         <div style={{ maxWidth: "760px", marginBottom: "36px" }}>
           <span
             className="ev-eyebrow"
-            style={{ display: "inline-block", marginBottom: "20px" }}
+            style={{ display: "inline-block", marginBottom: "28px" }}
           >
             Why now
           </span>
           <h2
             style={{
               fontWeight: 400,
-              fontSize: "clamp(32px, 3.8vw, 52px)",
-              lineHeight: 1.12,
-              letterSpacing: "-0.022em",
+              fontSize: "clamp(30px, 3.2vw, 48px)",
+              lineHeight: 1.14,
+              letterSpacing: "-0.02em",
               color: "#2a2a2a",
               maxWidth: "24ch",
             }}
@@ -62,7 +62,7 @@ export default function WhyNowNew() {
                     : "none",
                 display: "flex",
                 flexDirection: "column",
-                gap: "16px",
+                gap: "20px",
               }}
             >
               {/* <div
@@ -77,9 +77,9 @@ export default function WhyNowNew() {
               </div> */}
               <h3
                 style={{
-                  fontWeight: 600,
+                  fontWeight: 500,
                   fontSize: "22px",
-                  lineHeight: 1.2,
+                  lineHeight: 1.3,
                   letterSpacing: "-0.015em",
                   color: "#2a2a2a",
                 }}
@@ -88,7 +88,7 @@ export default function WhyNowNew() {
               </h3>
               <p
                 style={{
-                  fontSize: "14px",
+                  fontSize: "15px",
                   lineHeight: 1.65,
                   color: "rgba(14,20,24,0.7)",
                 }}

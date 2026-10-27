@@ -49,7 +49,7 @@ export default function FinalCTANew() {
       style={{
         background: "#2a2a2a",
         color: "#FAF9F6",
-        padding: "80px 0 40px",
+        padding: "88px 0 40px",
         position: "relative",
         overflow: "hidden",
       }}
@@ -80,19 +80,19 @@ export default function FinalCTANew() {
           <div>
             <span
               className="ev-eyebrow ev-eyebrow--dark"
-              style={{ display: "inline-block", marginBottom: "20px", fontSize: "16px" }}
+              style={{ display: "inline-block", marginBottom: "28px" }}
             >
               Reach out and connect
             </span>
             <h2
               style={{
                 fontWeight: 400,
-                fontSize: "clamp(32px, 3.8vw, 52px)",
-                lineHeight: 1.12,
-                letterSpacing: "-0.022em",
+                fontSize: "clamp(30px, 3.2vw, 48px)",
+                lineHeight: 1.14,
+                letterSpacing: "-0.02em",
                 color: "#FAF9F6",
                 maxWidth: "15ch",
-                marginBottom: "20px",
+                marginBottom: "30px",
               }}
             >
               Learn more on how to capture a{" "}
@@ -105,7 +105,7 @@ export default function FinalCTANew() {
                 fontSize: "18px",
                 lineHeight: 1.7,
                 color: "#FAF9F6",
-                maxWidth: "46ch",
+                maxWidth: "440px",
               }}
             >
               Contact us for more information
