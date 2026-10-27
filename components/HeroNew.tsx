@@ -207,7 +207,7 @@ export default function HeroNew() {
           }}
         >
           <span style={{ display: "block" }}>Make every purchase</span>
-          <span style={{ display: "block" }}>more meaningful</span>
+          <span style={{ display: "block" }}>more meaningful.</span>
         </h1>
 
         <p
@@ -221,7 +221,7 @@ export default function HeroNew() {
             textAlign: "center",
           }}
         >
-          Give every piece a lasting digital record
+          Give every piece a brand-issued digital record.
         </p>
 
         <div
@@ -244,7 +244,7 @@ export default function HeroNew() {
               }}
             >
               A lasting way for customers to keep and revisit the pieces they
-              love, while your brand stays present beyond the first sale.
+              love, and for your brand&apos;s story to stay present beyond the first sale.
             </p>
             <div
               style={{

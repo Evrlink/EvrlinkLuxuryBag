@@ -69,7 +69,7 @@ export default function ProblemNew() {
             className="ev-eyebrow"
             style={{ display: "inline-block", marginBottom: "20px", fontSize: "16px" }}
           >
-            The Problem
+            Digital Records for Luxury Brands
           </span>
           <h2
             style={{
@@ -81,12 +81,7 @@ export default function ProblemNew() {
               marginBottom: "20px",
             }}
           >
-            Luxury created the value
-            <span
-              style={{ color: "#00B2C7", display: "block" }}
-            >
-              Platforms capture lifetime profit
-            </span>
+            A digital record, made for the piece.
           </h2>
           <p
             style={{
@@ -97,22 +92,11 @@ export default function ProblemNew() {
               maxWidth: "44ch",
             }}
           >
-            Each sale compounds the value. Every cent after the first
-            transaction flows to marketplaces, not the brand
-          </p>
-          <p
-            style={{
-              fontSize: "18px",
-              fontWeight: 600,
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
-              color: "#00B2C7",
-              paddingTop: "24px",
-              borderTop: "1px solid rgba(15,20,24,0.12)",
-              display: "inline-block",
-            }}
-          >
-            Now brands can capture lifetime value
+            A digital record with each purchase. Each record brings together
+            the piece&apos;s image, purchase details and brand provenance,
+            creating a lasting story. Recorded onchain, it gives the owner a
+            lasting reference to the piece while extending the brand
+            relationship beyond checkout.
           </p>
         </div>
 
@@ -134,18 +118,16 @@ export default function ProblemNew() {
             <circle cx="200" cy="200" r="140" fill="none" stroke="rgba(0,178,199,0.35)" strokeWidth="1" />
             <circle cx="200" cy="200" r="100" fill="none" stroke="rgba(0,178,199,0.6)" strokeWidth="1" />
 
-            {/* Tick nodes */}
+            {/* Tick nodes: purchase, record created, kept */}
             <circle cx="200" cy="22" r="4" fill="rgba(0,178,199,0.7)" stroke="#ECEEF0" strokeWidth="2" />
-            <circle cx="378" cy="200" r="3.5" fill="rgba(0,178,199,0.7)" stroke="#ECEEF0" strokeWidth="2" />
-            <circle cx="200" cy="378" r="3.5" fill="rgba(0,178,199,0.7)" stroke="#ECEEF0" strokeWidth="2" />
-            <circle cx="22" cy="200" r="3.5" fill="rgba(0,178,199,0.7)" stroke="#ECEEF0" strokeWidth="2" />
+            <circle cx="354.2" cy="289" r="3.5" fill="rgba(0,178,199,0.7)" stroke="#ECEEF0" strokeWidth="2" />
+            <circle cx="45.8" cy="289" r="3.5" fill="rgba(0,178,199,0.7)" stroke="#ECEEF0" strokeWidth="2" />
 
             {/* Radial dashes */}
             <g stroke="rgba(0,178,199,0.3)" strokeWidth="1" strokeDasharray="2 4">
               <line x1="200" y1="60" x2="200" y2="22" />
-              <line x1="340" y1="200" x2="378" y2="200" />
-              <line x1="200" y1="340" x2="200" y2="378" />
-              <line x1="60" y1="200" x2="22" y2="200" />
+              <line x1="321.2" y1="270" x2="354.2" y2="289" />
+              <line x1="78.8" y1="270" x2="45.8" y2="289" />
             </g>
 
             {/* Bag illustration */}
@@ -158,7 +140,7 @@ export default function ProblemNew() {
 
             {/* Orbit arrow arc */}
             <path
-              d="M 225 24 A 178 178 0 0 1 376 218"
+              d="M 255 30.7 A 178 178 0 0 1 362.6 272.4"
               fill="none"
               stroke="#00B2C7"
               strokeWidth="1.2"
@@ -177,10 +159,9 @@ export default function ProblemNew() {
               </animateMotion>
             </circle>
 
-            {/* Pulse rings at resale nodes */}
-            <circle cx="378" cy="200" r="3.5" fill="none" stroke="#00B2C7" strokeWidth="1.5" style={{ transformOrigin: "center", transformBox: "fill-box", animation: "evNodePulse 12s linear 3s infinite", opacity: 0 }} />
-            <circle cx="200" cy="378" r="3.5" fill="none" stroke="#00B2C7" strokeWidth="1.5" style={{ transformOrigin: "center", transformBox: "fill-box", animation: "evNodePulse 12s linear 6s infinite", opacity: 0 }} />
-            <circle cx="22" cy="200" r="3.5" fill="none" stroke="#00B2C7" strokeWidth="1.5" style={{ transformOrigin: "center", transformBox: "fill-box", animation: "evNodePulse 12s linear 9s infinite", opacity: 0 }} />
+            {/* Pulse rings as the orbit passes each stage */}
+            <circle cx="354.2" cy="289" r="3.5" fill="none" stroke="#00B2C7" strokeWidth="1.5" style={{ transformOrigin: "center", transformBox: "fill-box", animation: "evNodePulse 12s linear 4s infinite", opacity: 0 }} />
+            <circle cx="45.8" cy="289" r="3.5" fill="none" stroke="#00B2C7" strokeWidth="1.5" style={{ transformOrigin: "center", transformBox: "fill-box", animation: "evNodePulse 12s linear 8s infinite", opacity: 0 }} />
             <circle cx="200" cy="22" r="4" fill="none" stroke="#00B2C7" strokeWidth="1.5" style={{ transformOrigin: "center", transformBox: "fill-box", animation: "evNodePulse 12s linear 0s infinite", opacity: 0 }} />
 
             <defs>
@@ -189,11 +170,16 @@ export default function ProblemNew() {
               </marker>
             </defs>
 
-            {/* Orbit labels */}
-            <text x="200" y="12" textAnchor="middle" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="#00B2C7">1ST SALE</text>
-            <text x="392" y="204" textAnchor="end" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="rgba(15,20,24,0.55)">SOLD</text>
-            <text x="200" y="396" textAnchor="middle" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="rgba(15,20,24,0.55)">SOLD</text>
-            <text x="8" y="204" textAnchor="start" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="rgba(15,20,24,0.55)">SOLD</text>
+            {/* Orbit labels: purchase, then record created, then kept */}
+            <text x="200" y="12" textAnchor="middle" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="#00B2C7">PURCHASE</text>
+            <text textAnchor="end" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="rgba(15,20,24,0.55)">
+              <tspan x="390" y="338">RECORD</tspan>
+              <tspan x="390" y="350">CREATED</tspan>
+            </text>
+            <text textAnchor="start" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="rgba(15,20,24,0.55)">
+              <tspan x="10" y="338">KEPT &amp;</tspan>
+              <tspan x="10" y="350">REVISITED</tspan>
+            </text>
           </svg>
         </div>
       </div>
