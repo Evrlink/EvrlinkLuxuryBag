@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import CursorDot from "@/components/CursorDot";
 
 const didot = localFont({
   src: [
@@ -46,7 +45,6 @@ export default function RootLayout({
       className={`${didot.variable} ${didotTitle.variable} ${frutiger.variable}`}
     >
       <body style={{ minHeight: "100%", display: "flex", flexDirection: "column" }}>
-        <CursorDot />
         {children}
       </body>
     </html>

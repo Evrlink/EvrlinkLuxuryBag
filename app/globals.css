@@ -21,12 +21,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (pointer: coarse) {
-  .cursor-dot {
-    display: none !important;
-  }
-}
-
 /* CTAs — modern luxury: editorial shape, metallic gold, glass outline */
 .rim-btn {
   --rim-ease: cubic-bezier(0.22, 1, 0.36, 1);
