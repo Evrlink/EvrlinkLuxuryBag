@@ -47,7 +47,7 @@ export default function NavbarNew() {
             alignItems: "center",
             gap: "12px",
             textDecoration: "none",
-            color: "#efe9de",
+            color: "#FAF9F6",
             fontSize: "14px",
             fontWeight: 600,
             letterSpacing: "0.42em",

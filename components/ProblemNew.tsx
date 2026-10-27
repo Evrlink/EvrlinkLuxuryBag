@@ -67,36 +67,36 @@ export default function ProblemNew() {
         <div style={{ maxWidth: "600px" }}>
           <span
             className="ev-eyebrow"
-            style={{ display: "inline-block", marginBottom: "20px", fontSize: "16px" }}
+            style={{ display: "inline-block", marginBottom: "30px", fontSize: "16px" }}
           >
             The Digital Record
           </span>
           <h2
             style={{
               fontWeight: 400,
-              fontSize: "clamp(28px, 3.2vw, 40px)",
+              fontSize: "clamp(26px, 3vw, 37px)",
               lineHeight: 1.14,
               letterSpacing: "-0.02em",
               color: "#2a2a2a",
-              marginBottom: "20px",
+              marginBottom: "30px",
             }}
           >
-            A digital record, made for the piece.
+            A digital record for every purchase
           </h2>
           <p
             style={{
               fontSize: "18px",
-              lineHeight: 1.65,
+              lineHeight: 1.7,
               color: "rgba(15,20,24,0.68)",
               marginBottom: "20px",
-              maxWidth: "44ch",
+              maxWidth: "440px",
             }}
           >
-            Each record brings together the piece&apos;s image and purchase
-            details, alongside the provenance and story the brand chooses to
-            share. Associated with the purchase and recorded onchain, it gives
-            the owner a lasting reference to the piece. It also gives the brand
-            a way to extend the relationship beyond checkout.
+            Evrlink helps brands issue a digital record for each piece. It
+            brings together the piece&apos;s image, purchase details, the
+            provenance or story the brand chooses to share. Recorded onchain,
+            customers have a lasting reference to their piece while helping
+            brands stay present beyond checkout.
           </p>
         </div>
 

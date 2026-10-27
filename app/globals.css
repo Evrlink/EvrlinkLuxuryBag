@@ -7,7 +7,7 @@
 html, body {
   min-height: 100%;
   background: #131314;
-  color: #F5F0E8;
+  color: #FAF9F6;
 }
 
 html {
@@ -199,9 +199,9 @@ a {
   --ev-ink-35: rgba(14, 20, 24, 0.35);
   --ev-ink-15: rgba(14, 20, 24, 0.15);
   --ev-ink-08: rgba(14, 20, 24, 0.08);
-  --ev-cream: #efe9de;
-  --ev-cream-70: rgba(239, 233, 222, 0.70);
-  --ev-cream-55: rgba(239, 233, 222, 0.55);
+  --ev-cream: #FAF9F6;
+  --ev-cream-70: rgba(245, 242, 236, 0.70);
+  --ev-cream-55: rgba(245, 242, 236, 0.55);
   --ev-cream-15: rgba(239, 233, 222, 0.15);
   --ev-teal: #00B2C7;
   --ev-teal-dim: rgba(0, 178, 199, 0.18);
@@ -223,7 +223,7 @@ a {
   gap: 10px;
   border: 1px solid rgba(0, 178, 199, 0.22);
   background: #2a2a2a;
-  color: #f5f2ec;
+  color: #FAF9F6;
   cursor: pointer;
   font-family: inherit;
   font-size: 13px;
@@ -358,7 +358,7 @@ a {
   color: var(--ev-ink-55);
 }
 .ev-eyebrow--teal  { color: var(--ev-teal); }
-.ev-eyebrow--dark  { color: var(--ev-cream-55); }
+.ev-eyebrow--dark  { color: #FAF9F6; }
 
 /* ── Section container ─────────────────────────────────────────── */
 .ev-container {

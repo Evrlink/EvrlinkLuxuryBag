@@ -59,7 +59,7 @@ export default function StatementNew() {
             letterSpacing: "-0.03em",
             maxWidth: "18ch",
             margin: "0 auto",
-            color: "#efe9de",
+            color: "#FAF9F6",
             textShadow:
               "0 -1px 0 rgba(0,0,0,0.55), 0 1px 0 rgba(239,233,222,0.09), 0 2px 0 rgba(239,233,222,0.05), 0 30px 60px rgba(0,0,0,0.5)",
           }}

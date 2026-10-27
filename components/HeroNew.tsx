@@ -111,7 +111,7 @@ export default function HeroNew() {
         padding: "192px 0 120px",
         background:
           "radial-gradient(ellipse 80% 50% at 50% -10%, #3a3a3a 0%, transparent 55%), #2a2a2a",
-        color: "#efe9de",
+        color: "#FAF9F6",
         position: "relative",
         overflow: "hidden",
         minHeight: "64vh",
@@ -202,7 +202,7 @@ export default function HeroNew() {
             fontSize: "clamp(42px, 6.8vw, 96px)",
             lineHeight: 1.14,
             letterSpacing: "-0.025em",
-            color: "#f5f2ec",
+            color: "#FAF9F6",
             margin: "0 0 28px",
           }}
         >
@@ -216,7 +216,7 @@ export default function HeroNew() {
             fontSize: "clamp(20px, 2.15vw, 28px)",
             lineHeight: 1.4,
             letterSpacing: "-0.01em",
-            color: "rgba(245,242,236,0.88)",
+            color: "#FAF9F6",
             margin: "0 0 36px",
             textAlign: "center",
           }}
@@ -237,7 +237,7 @@ export default function HeroNew() {
               style={{
                 fontSize: "18px",
                 lineHeight: 1.7,
-                color: "rgba(245,242,236,0.72)",
+                color: "#FAF9F6",
                 maxWidth: "34em",
                 margin: "0 auto 28px",
                 fontWeight: 400,

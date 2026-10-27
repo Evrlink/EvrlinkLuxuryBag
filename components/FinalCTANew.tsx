@@ -48,7 +48,7 @@ export default function FinalCTANew() {
       id="contact"
       style={{
         background: "#2a2a2a",
-        color: "#efe9de",
+        color: "#FAF9F6",
         padding: "80px 0 40px",
         position: "relative",
         overflow: "hidden",
@@ -90,13 +90,13 @@ export default function FinalCTANew() {
                 fontSize: "clamp(32px, 3.8vw, 52px)",
                 lineHeight: 1.12,
                 letterSpacing: "-0.022em",
-                color: "#efe9de",
+                color: "#FAF9F6",
                 maxWidth: "15ch",
                 marginBottom: "20px",
               }}
             >
               Learn more on how to capture a{" "}
-              <span style={{ color: "rgba(239,233,222,0.55)" }}>
+              <span style={{ color: "#FAF9F6" }}>
                 products lifetime value
               </span>
             </h2>
@@ -104,7 +104,7 @@ export default function FinalCTANew() {
               style={{
                 fontSize: "18px",
                 lineHeight: 1.7,
-                color: "rgba(239,233,222,0.7)",
+                color: "#FAF9F6",
                 maxWidth: "46ch",
               }}
             >
@@ -132,7 +132,7 @@ export default function FinalCTANew() {
                   padding: "18px 0",
                   fontFamily: "inherit",
                   fontSize: "15px",
-                  color: "#efe9de",
+                  color: "#FAF9F6",
                   outline: "none",
                 }}
               />
@@ -156,7 +156,7 @@ export default function FinalCTANew() {
                   padding: "18px 0",
                   fontFamily: "inherit",
                   fontSize: "15px",
-                  color: "#efe9de",
+                  color: "#FAF9F6",
                   outline: "none",
                 }}
               />
@@ -180,7 +180,7 @@ export default function FinalCTANew() {
                   padding: "18px 0",
                   fontFamily: "inherit",
                   fontSize: "15px",
-                  color: "#efe9de",
+                  color: "#FAF9F6",
                   outline: "none",
                 }}
               />
@@ -207,7 +207,7 @@ export default function FinalCTANew() {
                   fontWeight: 600,
                   letterSpacing: "0.18em",
                   textTransform: "uppercase",
-                  color: "#efe9de",
+                  color: "#FAF9F6",
                 }}
               >
                 ✓ Received. A member of our team will be in touch within 48 hours.
@@ -240,7 +240,7 @@ export default function FinalCTANew() {
         .ev-field:focus-within {
           border-bottom-color: #efe9de !important;
         }
-        input::placeholder { color: rgba(239,233,222,0.55); letter-spacing: 0.02em; }
+        input::placeholder { color: #FAF9F6; letter-spacing: 0.02em; }
         @media (max-width: 720px) {
           .ev-finalcta-inner {
             grid-template-columns: 1fr !important;

@@ -6,7 +6,7 @@ export default function SiteFooter() {
       id="company"
       style={{
         background: "#2a2a2a",
-        color: "rgba(239,233,222,0.7)",
+        color: "#FAF9F6",
         padding: "40px 0",
         borderTop: "1px solid rgba(239,233,222,0.08)",
       }}
@@ -21,7 +21,7 @@ export default function SiteFooter() {
           fontWeight: 600,
           letterSpacing: "0.22em",
           textTransform: "uppercase",
-          color: "rgba(239,233,222,0.55)",
+          color: "#FAF9F6",
           flexWrap: "wrap",
           gap: "16px",
         }}
@@ -31,24 +31,24 @@ export default function SiteFooter() {
           <a
             href="#problem"
             style={{ textDecoration: "none", transition: "color 0.2s" }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#efe9de")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(239,233,222,0.55)")}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "#FAF9F6")}
+            onMouseLeave={(e) => (e.currentTarget.style.color = "#FAF9F6")}
           >
             The Problem
           </a>
           <a
             href="#benefits"
             style={{ textDecoration: "none", transition: "color 0.2s" }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#efe9de")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(239,233,222,0.55)")}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "#FAF9F6")}
+            onMouseLeave={(e) => (e.currentTarget.style.color = "#FAF9F6")}
           >
             Solution
           </a>
           <a
             href="#contact"
             style={{ textDecoration: "none", transition: "color 0.2s" }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#efe9de")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(239,233,222,0.55)")}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "#FAF9F6")}
+            onMouseLeave={(e) => (e.currentTarget.style.color = "#FAF9F6")}
           >
             Contact
           </a>
