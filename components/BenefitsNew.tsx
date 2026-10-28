@@ -2,19 +2,23 @@ export default function BenefitsNew() {
   const benefits = [
     {
       num: "01",
-      title: "A purchase record customers can revisit",
+      title: "Preserve brand meaning",
+      body: "Keep the craftsmanship, provenance, design intent, and heritage that make the piece distinctive connected to it beyond the sale.",
     },
     {
       num: "02",
-      title: "The piece's story, shared by the brand",
+      title: "Stay present after sale",
+      body: "Give customers a brand-issued reference they can return to, keeping the brand present throughout the ownership experience.",
     },
     {
       num: "03",
-      title: "Authentic, brand-provided information about the piece, available to reference after the sale",
+      title: "Create a lasting touchpoint",
+      body: "Extend the purchase beyond a single transaction with a digital record customers can keep and revisit over time.",
     },
     {
       num: "04",
-      title: "A connection that continues beyond checkout",
+      title: "Carry the brand’s perspective",
+      body: "Keep the story and context the brand chooses to share associated with the piece rather than leaving that context behind after checkout.",
     },
   ];
 
@@ -31,16 +35,21 @@ export default function BenefitsNew() {
           <div>
             <p className="evr-eyebrow">The Solution</p>
             <h2 id="evr-solution-title">
-              The piece, its purchase, and its story, together in one digital record.
+              Carry the story of the piece beyond the sale.
             </h2>
-            <p className="evr-solution__body">
-              Evrlink helps luxury brands issue a digital record associated with
-              each purchase. It brings together an image of the piece and its
-              purchase details, alongside the provenance and story the brand
-              chooses to share. Recorded onchain, it gives customers an
-              accessible reference to revisit, and gives brands a way to
-              continue the relationship beyond checkout.
-            </p>
+            <div className="evr-solution__body">
+              <p>
+                At purchase, a luxury piece is surrounded by the details that
+                give it context: its provenance, craftsmanship, design, and
+                brand story. Over time, that context can become separated from
+                the piece.
+              </p>
+              <p>
+                Evrlink keeps the two connected, giving owners a lasting
+                reference to what makes their piece distinctive while carrying
+                the brand&apos;s perspective beyond checkout.
+              </p>
+            </div>
           </div>
 
           <figure className="evr-card-stage">
@@ -135,45 +144,16 @@ export default function BenefitsNew() {
           {benefits.map((b, i) => (
             <div
               key={b.num}
+              className="evr-outcome"
               style={{
-                padding: "40px 40px 36px",
                 borderRight:
                   i % 2 === 0 ? "1px solid rgba(14,20,24,0.08)" : "none",
                 borderBottom:
                   i < 2 ? "1px solid rgba(14,20,24,0.08)" : "none",
-                display: "grid",
-                alignItems: "start",
               }}
             >
-              {/* <div
-                style={{
-                  width: "42px",
-                  height: "42px",
-                  borderRadius: "50%",
-                  border: "1px solid #2a2a2a",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "#2a2a2a",
-                  fontSize: "14px",
-                  fontWeight: 700,
-                }}
-              >
-                {/* {b.num}
-              </div> */}
-              <h3
-                style={{
-                  fontWeight: 500,
-                  fontSize: "22px",
-                  lineHeight: 1.3,
-                  letterSpacing: "-0.015em",
-                  color: "#2a2a2a",
-                  margin: 0,
-                  alignSelf: "start",
-                }}
-              >
-                {b.title}
-              </h3>
+              <h3>{b.title}</h3>
+              <p>{b.body}</p>
             </div>
           ))}
         </div>
@@ -205,9 +185,33 @@ export default function BenefitsNew() {
           text-wrap: balance;
         }
         .evr-solution__body {
-          margin: 0;
           max-width: 440px;
           font-size: 18px;
+          line-height: 1.7;
+          color: #4d4d4d;
+        }
+        .evr-solution__body p {
+          margin: 0;
+        }
+        .evr-solution__body p + p {
+          margin-top: 1.15em;
+        }
+        .evr-outcome {
+          padding: 48px 48px 52px;
+        }
+        .evr-outcome h3 {
+          margin: 0 0 16px;
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          color: #6e6e6e;
+        }
+        .evr-outcome p {
+          margin: 0;
+          max-width: 42ch;
+          font-size: 16px;
+          font-weight: 400;
           line-height: 1.7;
           color: #4d4d4d;
         }
