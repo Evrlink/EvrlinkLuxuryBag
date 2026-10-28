@@ -1,80 +1,77 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
 export default function NavbarNew() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <nav
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 50,
-        background: scrolled ? "rgba(42,42,42,0.88)" : "transparent",
-        borderBottom: "1px solid rgba(239,233,222,0.15)",
-        backdropFilter: scrolled ? "blur(14px)" : "none",
-        transition: "background 0.35s, backdrop-filter 0.35s",
-      }}
-    >
-      <div
-        className="ev-container"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr auto 1fr",
-          alignItems: "center",
-          height: "78px",
-        }}
-      >
-        {/* Brand */}
-        <a
-          href="#"
-          aria-label="Evrlink home"
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "12px",
-            textDecoration: "none",
-            color: "#FAF9F6",
-            fontSize: "14px",
-            fontWeight: 600,
-            letterSpacing: "0.42em",
-            textTransform: "uppercase",
-          }}
-        >
-         
-          Evrlink
+    <nav className="ev-nav">
+      <div className="ev-nav__left">
+        <a href="/" className="ev-nav__logo" aria-label="Evrlink home">
+          EVRLINK
         </a>
-
-        {/* Centre nav (placeholder — hidden on mobile) */}
-        <div
-          className="ev-nav-links"
-          style={{ display: "flex", gap: "44px", justifyContent: "center" }}
-        />
-
-        {/* Right CTA */}
-        <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center" }}>
-          <a
-            className="ev-btn"
-            href="#"
-            onClick={(event) => event.preventDefault()}
-          >
-            Partner login
-          </a>
+        <div className="ev-nav__links">
+          <a href="#problem">The Problem</a>
+          <a href="#benefits">Solution</a>
+          <a href="#contact">Contact</a>
         </div>
+      </div>
+      <div className="ev-nav__right">
+        <a href="/dashboard" className="ev-nav__login">
+          Dashboard login
+        </a>
+        <a href="#contact" className="ev-nav__demo">
+          Get a demo
+        </a>
       </div>
 
       <style>{`
-        @media (max-width: 720px) {
-          .ev-nav-links { display: none !important; }
+        .ev-nav {
+          position: sticky;
+          top: 0;
+          z-index: 50;
+          height: 80px;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 clamp(16px, 4.4vw, 56px);
+          background: rgba(250,249,246,.04);
+          border-bottom: 1px solid rgba(250,249,246,.09);
+          -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+          color: #FAF9F6;
+        }
+        .ev-nav__left { display: flex; align-items: center; gap: 44px; }
+        .ev-nav__logo {
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 5.9px;
+          color: #FAF9F6;
+          text-decoration: none;
+        }
+        .ev-nav__links { display: flex; gap: 30px; font-size: 14px; }
+        .ev-nav__links a,
+        .ev-nav__login {
+          color: #FAF9F6;
+          text-decoration: none;
+          transition: color .3s;
+        }
+        .ev-nav__links a:hover,
+        .ev-nav__login:hover { color: rgba(250,249,246,.65); }
+        .ev-nav__right { display: flex; align-items: center; gap: 22px; font-size: 14px; }
+        .ev-nav__demo {
+          display: inline-flex;
+          align-items: center;
+          background: #FAF9F6;
+          color: #141414;
+          border-radius: 999px;
+          font-size: 14px;
+          padding: 12px 22px;
+          text-decoration: none;
+          transition: background-color .45s ease, color .45s ease;
+        }
+        .ev-nav__demo:hover { background: #E9E3D7; color: #000; }
+        @media (max-width: 860px) {
+          .ev-nav__links { display: none; }
+        }
+        @media (max-width: 480px) {
+          .ev-nav__login { display: none; }
         }
       `}</style>
     </nav>
