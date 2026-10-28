@@ -1,7 +1,6 @@
-const rows: {
-  label: string;
-  marks: ["yes" | "no" | "muted"][];
-}[] = [
+type MarkKind = "yes" | "no" | "muted";
+
+const rows: { label: string; marks: MarkKind[] }[] = [
   { label: "Non-intrusive to production", marks: ["yes", "no", "no"] },
   { label: "Created at checkout", marks: ["yes", "no", "no"] },
   { label: "Piece's story accessible for its lifecycle", marks: ["yes", "no", "no"] },
@@ -12,7 +11,7 @@ const rows: {
   { label: "No app needed", marks: ["yes", "muted", "muted"] },
 ];
 
-function Mark({ kind }: { kind: "yes" | "no" | "muted" }) {
+function Mark({ kind }: { kind: MarkKind }) {
   if (kind === "no") {
     return (
       <svg
