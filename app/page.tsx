@@ -4,7 +4,6 @@ import ProblemNew from "@/components/ProblemNew";
 import BenefitsNew from "@/components/BenefitsNew";
 import WhyNowNew from "@/components/WhyNowNew";
 import FinalCTANew from "@/components/FinalCTANew";
-import StatementNew from "@/components/StatementNew";
 import SiteFooter from "@/components/SiteFooter";
 import EarlyAccessPopup from "@/components/EarlyAccessPopup";
 
@@ -30,7 +29,6 @@ export default function Home() {
       <BenefitsNew />
       <WhyNowNew />
       <FinalCTANew />
-      <StatementNew />
       <SiteFooter />
     </>
   );
