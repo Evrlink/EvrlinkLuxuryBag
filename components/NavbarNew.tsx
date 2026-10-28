@@ -5,10 +5,6 @@ import { useEffect, useState } from "react";
 export default function NavbarNew() {
   const [scrolled, setScrolled] = useState(false);
 
-  const openEarlyAccessPopup = () => {
-    window.dispatchEvent(new Event("open-early-access-popup"));
-  };
-
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -65,10 +61,14 @@ export default function NavbarNew() {
         />
 
         {/* Right CTA */}
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <button type="button" className="ev-btn" onClick={openEarlyAccessPopup}>
-            Get Early Access
-          </button>
+        <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center" }}>
+          <a
+            className="ev-btn"
+            href="#"
+            onClick={(event) => event.preventDefault()}
+          >
+            Partner login
+          </a>
         </div>
       </div>
 

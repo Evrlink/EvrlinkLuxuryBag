@@ -64,9 +64,9 @@ export default function StatementNew() {
               "0 -1px 0 rgba(0,0,0,0.55), 0 1px 0 rgba(239,233,222,0.09), 0 2px 0 rgba(239,233,222,0.05), 0 30px 60px rgba(0,0,0,0.5)",
           }}
         >
-          Brands can collect on {" "}
-          {/* <span style={{ fontStyle: "normal", fontWeight: 500 }}>Belong</span>{" "} */}
-          their investment
+          The piece continues.
+          <br />
+          So should its story.
         </h2>
 
         <div

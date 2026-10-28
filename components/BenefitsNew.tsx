@@ -35,19 +35,19 @@ export default function BenefitsNew() {
           <div>
             <p className="evr-eyebrow">The Solution</p>
             <h2 id="evr-solution-title">
-              Carry the story of the piece beyond the sale.
+              The story of a piece shouldn&apos;t end at checkout.
             </h2>
             <div className="evr-solution__body">
               <p>
-                At purchase, a luxury piece is surrounded by the details that
-                give it context: its provenance, craftsmanship, design, and
-                brand story. Over time, that context can become separated from
-                the piece.
+                A luxury piece leaves the brand with more than a purchase
+                receipt. It carries provenance, craftsmanship, design, and the
+                story that gives it meaning. But over time, that context can
+                become fragmented or difficult to find.
               </p>
               <p>
-                Evrlink keeps the two connected, giving owners a lasting
-                reference to what makes their piece distinctive while carrying
-                the brand&apos;s perspective beyond checkout.
+                Evrlink keeps it connected to the piece in a lasting digital
+                record, giving owners a place to return to its story and giving
+                brands a way to stay present beyond the sale.
               </p>
             </div>
           </div>

@@ -1,126 +1,40 @@
 export default function WhyNowNew() {
-  const items = [
-    {
-      num: "01",
-      title: "Resale outpacing primary",
-      body: "Resale grew +7%. Primary luxury contracted −2%. The gap is structural, not cyclical.",
-    },
-    {
-      num: "02",
-      title: "L2 enables micro-fees",
-      body: "Base reduces gas to fractions of a cent. A 2% fee at scale is finally viable.",
-    },
-    {
-      num: "03",
-      title: "EU Digital Product Passport",
-      body: "Item-level provenance is mandated for luxury by 2030. Evrlink is DPP-compliant by design.",
-    },
-  ];
-
   return (
-    <section style={{ padding: "88px 0", background: "#ECEEF0" }}>
+    <section style={{ padding: "56px 0", background: "#ECEEF0" }}>
       <div className="ev-container">
-        <div style={{ maxWidth: "760px", marginBottom: "36px" }}>
+        <div style={{ maxWidth: "640px" }}>
           <span
             className="ev-eyebrow"
-            style={{ display: "inline-block", marginBottom: "28px" }}
+            style={{ display: "inline-block", marginBottom: "20px" }}
           >
-            Why now
+            The infrastructure
           </span>
           <h2
             style={{
               fontWeight: 400,
-              fontSize: "clamp(30px, 3.2vw, 48px)",
+              fontSize: "clamp(28px, 2.6vw, 40px)",
               lineHeight: 1.14,
               letterSpacing: "-0.02em",
               color: "#2a2a2a",
-              maxWidth: "24ch",
+              marginBottom: "20px",
             }}
           >
-            This market could not exist before.{" "}
-            <span style={{ color: "rgba(14,20,24,0.55)" }}>Now it can.</span>
+            Built on Base.
           </h2>
-        </div>
-
-        <div
-          className="ev-wn-grid"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            borderTop: "1px solid rgba(14,20,24,0.08)",
-            borderBottom: "1px solid rgba(14,20,24,0.08)",
-          }}
-        >
-          {items.map((item, i) => (
-            <div
-              key={item.num}
-              style={{
-                padding: "32px 28px 36px",
-                borderRight:
-                  i < items.length - 1
-                    ? "1px solid rgba(14,20,24,0.08)"
-                    : "none",
-                display: "flex",
-                flexDirection: "column",
-                gap: "20px",
-              }}
-            >
-              {/* <div
-                style={{
-                  fontSize: "11px",
-                  fontWeight: 700,
-                  letterSpacing: "0.28em",
-                  color: "rgba(14,20,24,0.55)",
-                }}
-              >
-                {item.num}
-              </div> */}
-              <h3
-                style={{
-                  fontWeight: 500,
-                  fontSize: "22px",
-                  lineHeight: 1.3,
-                  letterSpacing: "-0.015em",
-                  color: "#2a2a2a",
-                }}
-              >
-                {item.title}
-              </h3>
-              <p
-                style={{
-                  fontSize: "15px",
-                  lineHeight: 1.65,
-                  color: "rgba(14,20,24,0.7)",
-                }}
-              >
-                {item.body}
-              </p>
-            </div>
-          ))}
+          <p
+            style={{
+              fontSize: "18px",
+              lineHeight: 1.7,
+              color: "rgba(15,20,24,0.68)",
+              margin: 0,
+              maxWidth: "440px",
+            }}
+          >
+            The blockchain for global finance. Built by Coinbase, trusted by
+            leading institutions, and open to all.
+          </p>
         </div>
       </div>
-
-      <style>{`
-        @media (max-width: 900px) {
-          .ev-wn-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
-          }
-          .ev-wn-grid > div {
-            border-bottom: 1px solid rgba(14,20,24,0.08);
-          }
-          .ev-wn-grid > div:nth-child(2n) {
-            border-right: none !important;
-          }
-        }
-        @media (max-width: 600px) {
-          .ev-wn-grid {
-            grid-template-columns: 1fr !important;
-          }
-          .ev-wn-grid > div {
-            border-right: none !important;
-          }
-        }
-      `}</style>
     </section>
   );
 }
