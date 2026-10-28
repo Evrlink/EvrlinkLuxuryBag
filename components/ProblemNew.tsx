@@ -1,227 +1,205 @@
+const noiseSvg = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.55'/></svg>")`;
+
 export default function ProblemNew() {
-  const noiseSvg = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.55'/></svg>")`;
-
   return (
-    <section
-      id="problem"
-      style={{
-        padding: "88px 0",
-        background: "#ECEEF0",
-        color: "#2a2a2a",
-        position: "relative",
-        overflow: "hidden",
-      }}
-    >
-      {/* Animated orbs */}
+    <section id="problem" className="ev-record">
+      <div className="ev-record__orbs" aria-hidden />
       <div
+        className="ev-record__grain"
         aria-hidden
-        style={{
-          position: "absolute",
-          inset: "-25%",
-          background: `
-            radial-gradient(ellipse 50% 55% at 22% 32%, rgba(0,178,199,0.12), transparent 65%),
-            radial-gradient(ellipse 45% 50% at 78% 65%, rgba(15,20,24,0.04), transparent 65%)
-          `,
-          filter: "blur(100px) saturate(115%)",
-          animation: "problemOrbs 30s ease-in-out infinite alternate",
-          maskImage:
-            "linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%)",
-          WebkitMaskImage:
-            "linear-gradient(to bottom, transparent 0%, #000 14%, #000 86%, transparent 100%)",
-          pointerEvents: "none",
-          zIndex: 0,
-        }}
+        style={{ backgroundImage: noiseSvg }}
       />
 
-      {/* Noise overlay */}
-      <div
-        aria-hidden
-        style={{
-          position: "absolute",
-          inset: 0,
-          backgroundImage: noiseSvg,
-          opacity: 0.04,
-          mixBlendMode: "multiply",
-          maskImage:
-            "linear-gradient(to bottom, transparent 0%, #000 10%, #000 90%, transparent 100%)",
-          WebkitMaskImage:
-            "linear-gradient(to bottom, transparent 0%, #000 10%, #000 90%, transparent 100%)",
-          pointerEvents: "none",
-        }}
-      />
-
-      <div
-        className="ev-container"
-        style={{
-          position: "relative",
-          zIndex: 2,
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "64px",
-          alignItems: "center",
-          maxWidth: "1360px",
-          textAlign: "left",
-        }}
-      >
-        {/* Copy */}
-        <div style={{ maxWidth: "600px" }}>
-          <span
-            className="ev-eyebrow"
-            style={{ display: "inline-block", marginBottom: "28px" }}
-          >
-            The Digital Record
-          </span>
-          <p
-            style={{
-              fontSize: "18px",
-              lineHeight: 1.7,
-              color: "rgba(15,20,24,0.68)",
-              margin: 0,
-              maxWidth: "440px",
-            }}
-          >
+      <div className="ev-record__inner">
+        <div>
+          <div className="ev-record__eyebrow">The Digital Record</div>
+          <h2>The story continues beyond the sale.</h2>
+          <p>
             Each record brings together an image of the piece, its purchase
             details, and the provenance or story the brand chooses to share.
             Customers can easily revisit the details that matter.
           </p>
-          <div className="ev-record-close">
-            <span
-              aria-hidden
-              style={{
-                display: "block",
-                width: "28px",
-                height: "1px",
-                background: "#00B2C7",
-                marginBottom: "16px",
-              }}
-            />
-            <p
-              style={{
-                fontSize: "18px",
-                lineHeight: 1.7,
-                color: "#2a2a2a",
-                margin: 0,
-                maxWidth: "440px",
-              }}
-            >
-              The story continues beyond the sale.
-            </p>
-          </div>
         </div>
 
-        {/* SVG Orbit infographic */}
         <div
-          aria-hidden
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
+          className="ev-orbit"
+          role="img"
+          aria-label="Purchase, record created, kept and revisited"
         >
-          <svg
-            viewBox="0 0 400 400"
-            style={{ width: "100%", maxWidth: "550px", height: "auto", overflow: "visible" }}
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="200" cy="200" r="178" fill="none" stroke="rgba(0,178,199,0.22)" strokeWidth="1" />
-            <circle cx="200" cy="200" r="140" fill="none" stroke="rgba(0,178,199,0.35)" strokeWidth="1" />
-            <circle cx="200" cy="200" r="100" fill="none" stroke="rgba(0,178,199,0.6)" strokeWidth="1" />
-
-            {/* Tick nodes: purchase, record created, kept */}
-            <circle cx="200" cy="22" r="4" fill="rgba(0,178,199,0.7)" stroke="#ECEEF0" strokeWidth="2" />
-            <circle cx="354.2" cy="289" r="3.5" fill="rgba(0,178,199,0.7)" stroke="#ECEEF0" strokeWidth="2" />
-            <circle cx="45.8" cy="289" r="3.5" fill="rgba(0,178,199,0.7)" stroke="#ECEEF0" strokeWidth="2" />
-
-            {/* Radial dashes */}
-            <g stroke="rgba(0,178,199,0.3)" strokeWidth="1" strokeDasharray="2 4">
-              <line x1="200" y1="60" x2="200" y2="22" />
-              <line x1="321.2" y1="270" x2="354.2" y2="289" />
-              <line x1="78.8" y1="270" x2="45.8" y2="289" />
-            </g>
-
-            {/* Bag illustration */}
-            <g fill="none" stroke="#2a2a2a" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" transform="translate(200 200)">
-              <path d="M -38 -8 L -38 38 Q -38 46 -30 46 L 30 46 Q 38 46 38 38 L 38 -8 Z" />
-              <path d="M -22 -8 Q -22 -32 0 -32 Q 22 -32 22 -8" strokeWidth="1.4" />
-              <line x1="-38" y1="4" x2="38" y2="4" stroke="rgba(15,20,24,0.4)" />
-              <circle cx="0" cy="14" r="2.5" fill="#00B2C7" stroke="none" />
-            </g>
-
-            {/* Orbit arrow arc */}
-            <path
-              d="M 255 30.7 A 178 178 0 0 1 362.6 272.4"
-              fill="none"
-              stroke="#00B2C7"
-              strokeWidth="1.2"
-              strokeDasharray="4 3"
-              opacity="0.7"
-              markerEnd="url(#arrowhead)"
-            />
-
-            {/* Hidden circular path for animated dot */}
-            <path id="evOrbitPath" d="M 200 22 A 178 178 0 1 1 199.99 22" fill="none" stroke="none" />
-
-            {/* Traveling teal dot */}
-            <circle r="5" fill="#00B2C7" style={{ filter: "drop-shadow(0 0 8px rgba(0,178,199,0.9)) drop-shadow(0 0 16px rgba(0,178,199,0.4))" }}>
-              <animateMotion dur="12s" repeatCount="indefinite" rotate="0">
-                <mpath href="#evOrbitPath" />
-              </animateMotion>
-            </circle>
-
-            {/* Pulse rings as the orbit passes each stage */}
-            <circle cx="354.2" cy="289" r="3.5" fill="none" stroke="#00B2C7" strokeWidth="1.5" style={{ transformOrigin: "center", transformBox: "fill-box", animation: "evNodePulse 12s linear 4s infinite", opacity: 0 }} />
-            <circle cx="45.8" cy="289" r="3.5" fill="none" stroke="#00B2C7" strokeWidth="1.5" style={{ transformOrigin: "center", transformBox: "fill-box", animation: "evNodePulse 12s linear 8s infinite", opacity: 0 }} />
-            <circle cx="200" cy="22" r="4" fill="none" stroke="#00B2C7" strokeWidth="1.5" style={{ transformOrigin: "center", transformBox: "fill-box", animation: "evNodePulse 12s linear 0s infinite", opacity: 0 }} />
-
-            <defs>
-              <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-                <path d="M 0 0 L 8 4 L 0 8 z" fill="#00B2C7" />
-              </marker>
-            </defs>
-
-            {/* Orbit labels: purchase, then record created, then kept */}
-            <text x="200" y="12" textAnchor="middle" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="#00B2C7">PURCHASE</text>
-            <text textAnchor="end" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="rgba(15,20,24,0.55)">
-              <tspan x="390" y="338">RECORD</tspan>
-              <tspan x="390" y="350">CREATED</tspan>
-            </text>
-            <text textAnchor="start" fontFamily="inherit" fontSize="9" fontWeight="600" letterSpacing="0.24em" fill="rgba(15,20,24,0.55)">
-              <tspan x="10" y="338">KEPT &amp;</tspan>
-              <tspan x="10" y="350">REVISITED</tspan>
-            </text>
-          </svg>
+          <div className="ev-orbit__ring ev-orbit__ring--1" />
+          <div className="ev-orbit__ring ev-orbit__ring--2" />
+          <div className="ev-orbit__ring ev-orbit__ring--3" />
+          <img
+            className="ev-orbit__piece"
+            src="/digital-record-piece.webp"
+            alt=""
+          />
+          <div className="ev-orbit__spin">
+            <div className="ev-orbit__dot" />
+          </div>
+          <div className="ev-node ev-n1" />
+          <div className="ev-node ev-n2" />
+          <div className="ev-node ev-n3" />
+          <div className="ev-label ev-l1">PURCHASE</div>
+          <div className="ev-label ev-l2">
+            RECORD
+            <br />
+            CREATED
+          </div>
+          <div className="ev-label ev-l3">
+            KEPT &amp;
+            <br />
+            REVISITED
+          </div>
         </div>
       </div>
 
       <style>{`
-        @keyframes problemOrbs {
-          0%   { transform: translate(0, 0) scale(1); }
-          50%  { transform: translate(-3%, 2%) scale(1.06); }
-          100% { transform: translate(2%, -1.5%) scale(1.03); }
+        .ev-record {
+          position: relative;
+          overflow: hidden;
+          background: #ECEEF0;
+          color: #141414;
+          padding: clamp(80px, 10vw, 130px) 24px;
         }
-        @keyframes evNodePulse {
-          0%   { transform: scale(1);   opacity: 0.8; }
-          4%   { transform: scale(3.5); opacity: 0;   }
-          100% { transform: scale(3.5); opacity: 0;   }
+        .ev-record__orbs {
+          position: absolute;
+          inset: -25% -25%;
+          background:
+            radial-gradient(50% 55% at 22% 32%, rgba(0,178,199,.12), rgba(0,0,0,0) 65%),
+            radial-gradient(45% 50% at 78% 65%, rgba(15,20,24,.04), rgba(0,0,0,0) 65%);
+          filter: blur(100px) saturate(1.15);
+          animation: evOrbs 30s ease-in-out infinite alternate;
+          pointer-events: none;
         }
-        .ev-record-close {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          margin-top: 28px;
+        .ev-record__grain {
+          position: absolute;
+          inset: 0;
+          opacity: .04;
+          mix-blend-mode: multiply;
+          pointer-events: none;
         }
-        @media (max-width: 860px) {
-          #problem .ev-container {
-            grid-template-columns: 1fr !important;
-            gap: 48px !important;
-            text-align: center !important;
-          }
-          #problem .ev-container > div:first-child {
-            margin: 0 auto;
-          }
-          #problem .ev-record-close {
-            align-items: center;
-          }
+        .ev-record__inner {
+          position: relative;
+          max-width: 1040px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: minmax(0, 460px) minmax(0, 1fr);
+          gap: clamp(48px, 7vw, 100px);
+          align-items: center;
+        }
+        .ev-record__eyebrow {
+          font-size: 12px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          color: #5E5B57;
+          margin-bottom: 24px;
+        }
+        .ev-record h2 {
+          margin: 0 0 24px;
+          font-weight: 400;
+          font-size: clamp(34px, 3.75vw, 48px);
+          line-height: 1.12;
+          letter-spacing: -0.02em;
+        }
+        .ev-record p {
+          margin: 0;
+          font-size: 18px;
+          line-height: 1.55;
+          color: #4A4744;
+        }
+        .ev-orbit {
+          position: relative;
+          width: min(460px, 78vw);
+          aspect-ratio: 1;
+          margin: 0 auto;
+        }
+        .ev-orbit__ring {
+          position: absolute;
+          border-radius: 50%;
+          box-sizing: border-box;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .ev-orbit__ring--1 { width: 100%; height: 100%; border: 1px solid rgba(20,20,20,.14); }
+        .ev-orbit__ring--2 { width: 76%; height: 76%; border: 1px solid rgba(20,20,20,.10); }
+        .ev-orbit__ring--3 { width: 52%; height: 52%; border: 1px solid rgba(20,20,20,.07); }
+        .ev-orbit__piece {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 39%;
+          transform: translate(-50%, -50%);
+          mix-blend-mode: multiply;
+        }
+        .ev-orbit__spin {
+          position: absolute;
+          inset: 0;
+          animation: evSpin 9s linear infinite;
+        }
+        .ev-orbit__dot {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          width: 10px;
+          height: 10px;
+          margin: -5px 0 0 -5px;
+          border-radius: 50%;
+          background: #141414;
+          box-shadow: 0 0 12px 3px rgba(20,20,20,.18);
+        }
+        .ev-node {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          margin: -5px 0 0 -5px;
+          border-radius: 50%;
+          border: 1px solid #141414;
+          box-sizing: border-box;
+          background: #ECEEF0;
+          animation: evNode 9s linear infinite;
+        }
+        .ev-label {
+          position: absolute;
+          width: 120px;
+          margin-left: -60px;
+          text-align: center;
+          font-size: 11px;
+          letter-spacing: 2.5px;
+          line-height: 1.5;
+          color: #5E5B57;
+          animation: evLabel 9s linear infinite;
+        }
+        .ev-n1 { left: 50%; top: 0%; animation-delay: 0s; }
+        .ev-n2 { left: 93.3%; top: 75%; animation-delay: 3s; }
+        .ev-n3 { left: 6.7%; top: 75%; animation-delay: 6s; }
+        .ev-l1 { left: 50%; top: -38px; animation-delay: 0s; }
+        .ev-l2 { left: 93.3%; top: calc(75% + 18px); animation-delay: 3s; }
+        .ev-l3 { left: 6.7%; top: calc(75% + 18px); animation-delay: 6s; }
+        @keyframes evOrbs {
+          0% { transform: translate(0,0) scale(1); }
+          50% { transform: translate(-3%,2%) scale(1.06); }
+          100% { transform: translate(2%,-1.5%) scale(1.03); }
+        }
+        @keyframes evSpin { to { transform: rotate(360deg); } }
+        @keyframes evNode {
+          0%, 26% { background: #141414; box-shadow: 0 0 0 6px rgba(20,20,20,.08); }
+          36%, 100% { background: #ECEEF0; box-shadow: 0 0 0 0 rgba(20,20,20,0); }
+        }
+        @keyframes evLabel {
+          0%, 26% { color: #141414; }
+          36%, 100% { color: #5E5B57; }
+        }
+        @media (max-width: 820px) {
+          .ev-record__inner { grid-template-columns: 1fr; }
+          .ev-orbit { margin-top: 40px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .ev-record__orbs,
+          .ev-orbit__spin,
+          .ev-node,
+          .ev-label { animation: none !important; }
         }
       `}</style>
     </section>
