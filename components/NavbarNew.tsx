@@ -47,6 +47,7 @@ export default function NavbarNew() {
         <div className="ev-nav__links">
           <a href="#problem">The Problem</a>
           <a href="#benefits">Solution</a>
+          <a href="#comparison">Comparison</a>
           <a href="#contact">Contact</a>
         </div>
       </div>

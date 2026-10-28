@@ -2,6 +2,7 @@ import NavbarNew from "@/components/NavbarNew";
 import HeroNew from "@/components/HeroNew";
 import ProblemNew from "@/components/ProblemNew";
 import BenefitsNew from "@/components/BenefitsNew";
+import Comparison from "@/components/Comparison";
 import WhyNowNew from "@/components/WhyNowNew";
 import FinalCTANew from "@/components/FinalCTANew";
 import SiteFooter from "@/components/SiteFooter";
@@ -27,6 +28,7 @@ export default function Home() {
       <HeroNew />
       <ProblemNew />
       <BenefitsNew />
+      <Comparison />
       <WhyNowNew />
       <FinalCTANew />
       <SiteFooter />

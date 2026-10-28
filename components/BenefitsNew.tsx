@@ -26,7 +26,7 @@ export default function BenefitsNew() {
     <section
       id="benefits"
       data-nav="light"
-      style={{ padding: "88px 0", background: "#ffffff" }}
+      style={{ padding: "88px 0 32px", background: "#ffffff" }}
     >
       <div
         className="ev-container"
