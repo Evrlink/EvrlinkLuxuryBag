@@ -66,7 +66,8 @@ export default function HeroNew() {
         .ev-hero {
           position: relative;
           overflow: hidden;
-          min-height: calc(min(100vh, 900px) - 80px);
+          min-height: calc(min(100vh, 900px) - 152px);
+          min-height: calc(min(100svh, 900px) - 152px);
           margin-top: -80px;
           padding-top: 80px;
           box-sizing: content-box;
