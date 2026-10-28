@@ -2,7 +2,7 @@ const noiseSvg = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/200
 
 export default function ProblemNew() {
   return (
-    <section id="problem" className="ev-record">
+    <section id="problem" className="ev-record" data-nav="light">
       <div className="ev-record__orbs" aria-hidden />
       <div
         className="ev-record__grain"

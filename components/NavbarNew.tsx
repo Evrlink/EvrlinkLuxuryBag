@@ -1,6 +1,45 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function NavbarNew() {
+  const [onLight, setOnLight] = useState(false);
+
+  useEffect(() => {
+    const nav = document.querySelector(".ev-nav");
+    const sections = document.querySelectorAll("[data-nav='light']");
+    if (!nav || sections.length === 0) return;
+
+    let frame = 0;
+    const update = () => {
+      const probe = nav.getBoundingClientRect().bottom - 1;
+      let light = false;
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= probe && rect.bottom > probe) light = true;
+      });
+      setOnLight(light);
+    };
+
+    const schedule = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    window.addEventListener("hashchange", schedule);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+      window.removeEventListener("hashchange", schedule);
+    };
+  }, []);
+
   return (
-    <nav className="ev-nav">
+    <nav className={onLight ? "ev-nav ev-nav--light" : "ev-nav"}>
       <div className="ev-nav__left">
         <a href="/" className="ev-nav__logo" aria-label="Evrlink home">
           EVRLINK
@@ -36,6 +75,12 @@ export default function NavbarNew() {
           -webkit-backdrop-filter: blur(16px);
           backdrop-filter: blur(16px);
           color: #FAF9F6;
+          transition: background .3s, border-color .3s, color .3s;
+        }
+        .ev-nav--light {
+          background: rgba(255,255,255,.86);
+          border-bottom-color: rgba(20,20,20,.12);
+          color: #141414;
         }
         .ev-nav__left { display: flex; align-items: center; gap: 44px; }
         .ev-nav__logo {
@@ -54,6 +99,11 @@ export default function NavbarNew() {
         }
         .ev-nav__links a:hover,
         .ev-nav__login:hover { color: rgba(250,249,246,.65); }
+        .ev-nav--light .ev-nav__logo,
+        .ev-nav--light .ev-nav__links a,
+        .ev-nav--light .ev-nav__login { color: #141414; }
+        .ev-nav--light .ev-nav__links a:hover,
+        .ev-nav--light .ev-nav__login:hover { color: rgba(20,20,20,.55); }
         .ev-nav__right { display: flex; align-items: center; gap: 22px; font-size: 14px; }
         .ev-nav__demo {
           display: inline-flex;

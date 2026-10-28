@@ -25,6 +25,7 @@ export default function BenefitsNew() {
   return (
     <section
       id="benefits"
+      data-nav="light"
       style={{ padding: "88px 0", background: "#ffffff" }}
     >
       <div

@@ -1,6 +1,6 @@
 export default function WhyNowNew() {
   return (
-    <section style={{ padding: "56px 0", background: "#ECEEF0" }}>
+    <section data-nav="light" style={{ padding: "56px 0", background: "#ECEEF0" }}>
       <div className="ev-container">
         <div style={{ maxWidth: "640px" }}>
           <span
