@@ -47,16 +47,18 @@ export default function HeroNew() {
         <h1>
           <span className="ev-w" style={{ animationDelay: "0s" }}>Make</span>{" "}
           <span className="ev-w" style={{ animationDelay: ".08s" }}>every</span>{" "}
-          <span className="ev-w" style={{ animationDelay: ".16s" }}>purchase</span>
+          <span className="ev-w" style={{ animationDelay: ".16s" }}>sale</span>
           <br />
-          <span className="ev-w" style={{ animationDelay: ".24s" }}>more</span>{" "}
-          <span className="ev-w" style={{ animationDelay: ".32s" }}>meaningful.</span>
+          <span className="ev-w" style={{ animationDelay: ".24s" }}>a</span>{" "}
+          <span className="ev-w" style={{ animationDelay: ".32s" }}>lasting</span>{" "}
+          <span className="ev-w" style={{ animationDelay: ".40s" }}>one.</span>
         </h1>
         <div className="ev-hero__rule" aria-hidden />
         <p>
-          A digital record that carries a brand&apos;s story, heritage and
-          relationship with the customer beyond the first sale.
+          A digital record that continues to carry your brand&apos;s story and
+          heritage, keeping your brand&apos;s prestige present.
         </p>
+        <p>Beyond the sale.</p>
         <a href="#contact" className="ev-hero__cta">
           Request meeting
         </a>
