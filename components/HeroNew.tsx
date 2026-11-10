@@ -47,10 +47,11 @@ export default function HeroNew() {
         <h1>
           <span className="ev-w" style={{ animationDelay: "0s" }}>Make</span>{" "}
           <span className="ev-w" style={{ animationDelay: ".08s" }}>every</span>{" "}
-          <span className="ev-w" style={{ animationDelay: ".16s" }}>purchase</span>
+          <span className="ev-w" style={{ animationDelay: ".16s" }}>sale</span>
           <br />
-          <span className="ev-w" style={{ animationDelay: ".24s" }}>more</span>{" "}
-          <span className="ev-w" style={{ animationDelay: ".32s" }}>meaningful.</span>
+          <span className="ev-w" style={{ animationDelay: ".24s" }}>a</span>{" "}
+          <span className="ev-w" style={{ animationDelay: ".32s" }}>lasting</span>{" "}
+          <span className="ev-w" style={{ animationDelay: ".40s" }}>one.</span>
         </h1>
         <div className="ev-hero__rule" aria-hidden />
         <p>
