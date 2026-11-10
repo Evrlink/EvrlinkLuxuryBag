@@ -54,11 +54,13 @@ export default function HeroNew() {
           <span className="ev-w" style={{ animationDelay: ".40s" }}>one.</span>
         </h1>
         <div className="ev-hero__rule" aria-hidden />
-        <p>
-          A digital record that continues to carry your brand&apos;s story and
-          heritage, keeping your brand&apos;s prestige present.
-        </p>
-        <p>Beyond the sale.</p>
+        <div className="ev-hero__sub">
+          <p>
+            A digital record that continues to carry your brand&apos;s story and
+            heritage, keeping your brand&apos;s prestige present.
+          </p>
+          <p>Beyond the sale.</p>
+        </div>
         <a href="#contact" className="ev-hero__cta">
           Request meeting
         </a>
@@ -117,13 +119,21 @@ export default function HeroNew() {
           background: rgba(250,249,246,.35);
           animation: evDraw .9s ease-out .3s backwards;
         }
-        .ev-hero p {
-          margin: 0;
+        .ev-hero__sub {
           max-width: 620px;
+          width: 100%;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.35em;
+          animation: evNudge .8s ease-out .2s backwards;
+        }
+        .ev-hero__sub p {
+          margin: 0;
           font-size: clamp(17px, 1.6vw, 20px);
           line-height: 1.45;
           color: rgba(250,249,246,.78);
-          animation: evNudge .8s ease-out .2s backwards;
         }
         .ev-hero__cta {
           display: inline-flex;
@@ -153,7 +163,7 @@ export default function HeroNew() {
         @media (prefers-reduced-motion: reduce) {
           .ev-w,
           .ev-hero__rule,
-          .ev-hero p,
+          .ev-hero__sub,
           .ev-hero__cta,
           .ev-hero__glow {
             animation: none !important;
