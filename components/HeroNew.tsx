@@ -57,9 +57,8 @@ export default function HeroNew() {
         <p>
           A digital record that continues to carry your brand&apos;s story and
           heritage, keeping your brand&apos;s prestige present.
-          <br />
-          Beyond the sale.
         </p>
+        <p>Beyond the sale.</p>
         <a href="#contact" className="ev-hero__cta">
           Request meeting
         </a>
@@ -120,7 +119,7 @@ export default function HeroNew() {
         }
         .ev-hero p {
           margin: 0;
-          max-width: 650px;
+          max-width: 620px;
           font-size: clamp(17px, 1.6vw, 20px);
           line-height: 1.45;
           color: rgba(250,249,246,.78);
@@ -135,10 +134,10 @@ export default function HeroNew() {
           font-size: 15px;
           padding: 15px 28px;
           text-decoration: none;
-          transition: background-color .45s ease, color .45s ease;
+          transition: background-color 200ms ease, color 200ms ease;
           animation: evNudge .8s ease-out .3s backwards;
         }
-        .ev-hero__cta:hover { background: #E9E3D7; color: #000; }
+        .ev-hero__cta:hover { background: #C9AD79; color: #242424; }
         @keyframes evWord {
           from { opacity: .55; transform: translateY(10px); }
           to { opacity: 1; transform: none; }
