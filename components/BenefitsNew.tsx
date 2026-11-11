@@ -2,23 +2,23 @@ export default function BenefitsNew() {
   const benefits = [
     {
       num: "01",
-      title: "Preserve brand meaning",
-      body: "Keep the craftsmanship, provenance, design intent, and heritage that make the piece distinctive connected to it beyond the sale.",
+      title: "Extend brand value",
+      body: "Keep the craftsmanship, provenance, design intent, and heritage that make the piece distinctive connected to it beyond the sale. Prestige never lost.",
     },
     {
       num: "02",
-      title: "Stay present after sale",
-      body: "Give customers a brand-issued reference they can return to, keeping the brand present throughout the ownership experience.",
+      title: "Continue connection after sale",
+      body: "Give customers a brand-issued reference they can revisit, deploy and utilize.",
     },
     {
       num: "03",
-      title: "Create a lasting touchpoint",
-      body: "Extend the purchase beyond a single transaction with a digital record customers can keep and revisit over time.",
+      title: "Create a lasting reference",
+      body: "A lasting reference beyond sale with data that matters in communicating value.",
     },
     {
       num: "04",
-      title: "Carry the brand’s perspective",
-      body: "Keep the story and context the brand chooses to share associated with the piece rather than leaving that context behind after checkout.",
+      title: "AEO optimized",
+      body: "Data is structured and readable by agents, helping index details that matter.",
     },
   ];
 
@@ -36,19 +36,18 @@ export default function BenefitsNew() {
           <div>
             <p className="evr-eyebrow">The Solution</p>
             <h2 id="evr-solution-title">
-              The story of a piece shouldn&apos;t end at checkout.
+              Card issued by your brand at the moment of sale.
             </h2>
             <div className="evr-solution__body">
               <p>
-                A luxury piece leaves the brand with more than a purchase
-                receipt. It carries provenance, craftsmanship, design, and the
-                story that gives it meaning. But over time, that context can
-                become fragmented or difficult to find.
+                Evrlink creates a card for each piece at purchase, so your
+                product details are recorded when they&apos;re most accurate.
+                Your brand decides what&apos;s included, and the customer has it
+                from day one.
               </p>
               <p>
-                Evrlink keeps it connected to the piece in a lasting digital
-                record, giving owners a place to return to its story and giving
-                brands a way to stay present beyond the sale.
+                Your brand stays present long after the sale. Special details
+                are not lost, fragmented or disorganized.
               </p>
             </div>
           </div>

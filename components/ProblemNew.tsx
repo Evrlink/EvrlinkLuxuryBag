@@ -12,12 +12,14 @@ export default function ProblemNew() {
 
       <div className="ev-record__inner">
         <div>
-          <div className="ev-record__eyebrow">The Digital Record</div>
+          <div className="ev-record__eyebrow">A Digital Reference</div>
           <h2>The story continues beyond the sale.</h2>
           <p>
-            Each record brings together an image of the piece, its purchase
-            details, and the provenance or story the brand chooses to share.
-            Customers can easily revisit the details that matter.
+            Each Evrlink card brings together your brand&apos;s story and
+            heritage. When a luxury piece has been purchased, its story
+            continues unfolding. Unique details are not lost, forgotten, or
+            fragmented. Customers use cards to reference special purchases,
+            helping maintain value.
           </p>
         </div>
 
