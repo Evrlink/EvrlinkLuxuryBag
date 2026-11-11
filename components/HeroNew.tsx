@@ -56,9 +56,8 @@ export default function HeroNew() {
         <div className="ev-hero__rule" aria-hidden />
         <p>
           A digital record that continues to carry your brand&apos;s story and
-          heritage, keeping your brand&apos;s prestige present.
+          heritage, keeping your brand&apos;s prestige present beyond the sale.
         </p>
-        <p>Beyond the sale.</p>
         <a href="#contact" className="ev-hero__cta">
           Request meeting
         </a>
