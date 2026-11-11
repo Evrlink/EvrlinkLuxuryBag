@@ -36,7 +36,7 @@ export default function BenefitsNew() {
           <div>
             <p className="evr-eyebrow">The Solution</p>
             <h2 id="evr-solution-title">
-              Card issued by your brand at the moment of sale.
+              Identity card issued by your brand at the moment of sale.
             </h2>
             <div className="evr-solution__body">
               <p>
