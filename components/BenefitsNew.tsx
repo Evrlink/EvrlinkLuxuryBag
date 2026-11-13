@@ -3,22 +3,22 @@ export default function BenefitsNew() {
     {
       num: "01",
       title: "Extend brand value",
-      body: "Keep the craftsmanship, provenance, design intent, and heritage that make the piece distinctive connected to it beyond the sale. Prestige never lost.",
+      body: "Enrich cards with official product data. Keep the craftsmanship, provenance, design intent, and heritage that make the piece distinctive connected to it beyond the sale. Prestige never lost.",
     },
     {
       num: "02",
       title: "Continue connection after sale",
-      body: "Give customers a brand-issued reference they can revisit, deploy and utilize.",
+      body: "Customer facing cards give customers an authentic brand-issued reference they can revisit, deploy and utilize.",
     },
     {
       num: "03",
       title: "Create a lasting reference",
-      body: "A lasting reference beyond sale with data that matters in communicating value.",
+      body: "Your brand extracts and attaches the fields you want referenced, so the lasting story is true and authentic throughout the product's lifecycle. The lasting reference beyond sale communicates value.",
     },
     {
       num: "04",
-      title: "AEO optimized",
-      body: "Data is structured and readable by agents, helping index details that matter.",
+      title: "Enriched for agents",
+      body: "Cards are AEO optimized and data enriched for agent crawlability, helping your brand index details that matter.",
     },
   ];
 
