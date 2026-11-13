@@ -8,7 +8,7 @@ export default function BenefitsNew() {
     {
       num: "02",
       title: "Continue connection after sale",
-      body: "Customer facing cards give customers an authentic brand-issued reference they can revisit, deploy and utilize.",
+      body: "Customer-facing cards give customers an authentic brand-issued reference they can revisit, deploy and utilize. Customers have a reference card that helps extend value beyond sale.",
     },
     {
       num: "03",
