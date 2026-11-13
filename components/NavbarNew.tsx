@@ -115,9 +115,9 @@ export default function NavbarNew() {
           font-size: 14px;
           padding: 12px 22px;
           text-decoration: none;
-          transition: background-color .45s ease, color .45s ease;
+          transition: background-color 200ms ease, color 200ms ease;
         }
-        .ev-nav__demo:hover { background: #E9E3D7; color: #000; }
+        .ev-nav__demo:hover { background: #C9AD79; color: #242424; }
         @media (max-width: 860px) {
           .ev-nav__links { display: none; }
         }
