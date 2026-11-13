@@ -13,7 +13,7 @@ export default function BenefitsNew() {
     {
       num: "03",
       title: "Create a lasting reference",
-      body: "Your brand extracts and attaches the fields you want referenced, so the lasting story is true and authentic throughout the product's lifecycle. The lasting reference beyond sale communicates value.",
+      body: "Your brand extracts and attaches the details you want referenced, so the lasting story is authentic throughout the product's lifecycle. Important details continue unfolding.",
     },
     {
       num: "04",
