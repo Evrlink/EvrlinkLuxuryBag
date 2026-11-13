@@ -3,7 +3,7 @@ export default function BenefitsNew() {
     {
       num: "01",
       title: "Extend brand value",
-      body: "Enrich cards with official product data. Keep the craftsmanship, provenance, design intent, and heritage that make the piece distinctive connected to it beyond the sale. Prestige never lost.",
+      body: "Enrich cards with official product data. Keep craftsmanship, provenance, design intent, and heritage that make the piece distinctive connected beyond the sale. Your story deserves to live on.",
     },
     {
       num: "02",
